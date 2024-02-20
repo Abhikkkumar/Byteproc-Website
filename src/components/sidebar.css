@@ -1,7 +1,7 @@
 .sidelist {
   position: absolute;
   width: 100%;
-  top: 10vh;
+  top: 4rem;
   bottom: 0;
   background-color: var(--col1);
   border-top: 1px solid #aaa;
