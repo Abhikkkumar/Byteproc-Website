@@ -1,0 +1,45 @@
+* {
+  --col5: #1b1525;
+  --col1: #fff;
+  --col2: #aaa;
+  --col3: #4560af;
+  --col4: #344484;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fade-enter,
+.fade-exit-done {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.fade-enter-done,
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.fa-bars.fa-solid::before {
+  font-size: 2rem;
+}
+/* @media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .headerMob {
+    display: none;
+  }
+  .header {
+    display: flex;
+  }
+} */
