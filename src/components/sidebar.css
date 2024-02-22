@@ -1,7 +1,7 @@
 .sidelist {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 4rem;
+  top: 3.7rem;
   bottom: 0;
   background-color: var(--col1);
   border-top: 1px solid #aaa;
@@ -11,7 +11,7 @@
   transform: translateX(-100%);
 }
 .sidebottom {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   transition: all .05s ease;
   background-color: rgba(255,255,255,.1);
