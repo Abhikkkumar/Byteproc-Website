@@ -3,6 +3,7 @@ import logo from "../assets/blue-logo.png";
 import DropdownT from "./DropdownT";
 import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
+import "./header.css";
 
 export default function Header() {
   const services = [
@@ -20,24 +21,24 @@ export default function Header() {
         alt="logo"
       />
 
-      <div className="flex justify-between items-center min-w-[60%] text-[var(--col5)] ">
+      <div className="navlists flex justify-between items-center min-w-[60%] text-[var(--col5)] ">
         <div>
           <NavLink to="/" className="uppercase hover:text-[var(--col3)]">
-            <p>Home</p>
+            Home
           </NavLink>
         </div>
         <div>
           <NavLink to="/" className="uppercase">
-            <p>About Us</p>
+            About Us
           </NavLink>
         </div>
         <div
-          className="relative hover:bg-[var(--col3)] rounded-t-lg py-[.35rem] px-[.55rem]"
+          className="relative  rounded-t-lg py-[.35rem] px-[.55rem]"
           onMouseEnter={() => setShowServices(true)}
           onMouseLeave={() => setShowServices(false)}
         >
           <NavLink to="/" className="uppercase">
-            <p>Services</p>
+            Services
           </NavLink>
           <CSSTransition
             in={showServices}
@@ -50,7 +51,7 @@ export default function Header() {
         </div>
         <div>
           <NavLink to="/" className="uppercase">
-            <p>Contact Us</p>
+            Contact Us
           </NavLink>
         </div>
       </div>

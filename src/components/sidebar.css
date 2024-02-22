@@ -1,3 +1,8 @@
+@media(min-width:641px){
+  .sidebar{
+    display: none;
+  }
+}
 .sidelist {
   position: fixed;
   width: 100%;
@@ -16,6 +21,6 @@
   transition: all 0.05s ease;
   /* background-color: rgba(255, 255, 255, 0.1); */
 }
-.bottom-hide {
+.hide {
   display: none;
 }
