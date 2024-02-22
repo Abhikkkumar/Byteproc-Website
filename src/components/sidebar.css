@@ -5,16 +5,16 @@
   bottom: 0;
   background-color: var(--col1);
   border-top: 1px solid #aaa;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .sidelist-hide {
   transform: translateX(-100%);
 }
 .sidebottom {
   position: fixed;
-  bottom: 1rem;
-  transition: all .05s ease;
-  background-color: rgba(255,255,255,.1);
+  top: 70vh;
+  transition: all 0.05s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .bottom-hide {
   display: none;
