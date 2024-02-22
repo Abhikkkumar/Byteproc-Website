@@ -58,7 +58,7 @@ export default function Footer() {
           Our Location
         </h2>
         <iframe
-          className="w-[50%] sm:w-full"
+          className="w-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119631.16820783437!2d72.78092501778825!3d20.445715705246023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0db12a625575b%3A0xf25ca5d34a352572!2sVama%20Skylight%20LLP.!5e0!3m2!1sen!2sin!4v1707742323867!5m2!1sen!2sin"
           width="100%"
           allowfullscreen=""
