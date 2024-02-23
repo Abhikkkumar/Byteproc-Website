@@ -6,6 +6,10 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import HeaderMob from "./components/HeaderMob";
 import Sidebar from "./components/Sidebar";
+import Footer2 from "./components/Footer2";
+import Section3 from "./components/Section3";
+import Carousel from "./components/Carousel";
+import CarouselM from "./components/CarouselM";
 
 function App() {
   const [side, setSide] = useState(false);
@@ -18,7 +22,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
+        <Carousel/>
+        <CarouselM/>
+        <Section3/>
         <Footer />
+        <Footer2/>
+
       </BrowserRouter>
     </div>
   );

@@ -16,6 +16,7 @@ export default function Footer() {
           <a href="#" target="_blank" className="pr-[.3rem] text-[1.4rem]">
             <i className="fa-brands fa-linkedin"></i>
           </a>
+          
         </div>
       </div>
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full flex flex-col">
