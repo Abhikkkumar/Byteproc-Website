@@ -3,8 +3,8 @@ import "./sidebar.css";
 
 export default function Sidebar({ side }) {
   return (
-    <div className="sidebar ">
-      <div  className={side ? "sidelist " : "sidelist sidelist-hide"}>
+    <div className="sidebar">
+      <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
           <p className="">Industries</p>
           <i className="fa-solid fa-chevron-down"></i>
@@ -22,7 +22,13 @@ export default function Sidebar({ side }) {
           <i className="fa-solid fa-chevron-down"></i>
         </div>
       </div>
-      <div className={side?"sidebottom w-[100%] text-center":"sidebottom bottom-hide w-[100%] text-center"}>
+      <div
+        className={
+          side
+            ? "sidebottom w-[100%] text-center"
+            : "sidebottom hide w-[100%] text-center"
+        }
+      >
         <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">
           Get Free Consultation
         </button>

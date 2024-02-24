@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.app{
+  width: 100%;
+}
 .fade-enter,
 .fade-exit-done {
   opacity: 0;
@@ -29,6 +31,11 @@
 
 .fa-bars.fa-solid::before {
   font-size: 2rem;
+}
+.headerMob {
+  position: fixed;
+  top: 0;
+  background-color: var(--col1);
 }
 /* @media (max-width: 767px) {
   .header {

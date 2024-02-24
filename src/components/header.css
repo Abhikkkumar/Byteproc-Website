@@ -1,0 +1,22 @@
+.navlists > div > a {
+  display: flex;
+  position: relative;
+  font-weight: 600 !important;
+  padding: 0 0.7rem;
+}
+.navlists > div > a:hover {
+  color: var(--col4);
+}
+.navlists > div > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--col4);
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.navlists > div > a:hover::after {
+  width: 100%;
+}
