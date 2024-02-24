@@ -38,15 +38,17 @@
   }
   
   .sec3-inner button {
-    background-color: var(--brand-color);
+    background-color: var(--col3);
     padding: 15px 30px 15px 30px;
     border: none;
     cursor: pointer;
-    border: 1px solid var(--brand-color);
+    border: 1px solid var(--col3);
+
+    
   }
   
   .sec3-inner button:hover {
-    color: var(--brand-color);
+    color: var(--col3);
     background-color: var(--text-color-1);
   }
   @media (max-width: 678px) {
