@@ -6,20 +6,26 @@ export default function Sidebar({ side }) {
     <div className="sidebar">
       <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Industries</p>
+          <p className="">Home</p>
+        </div>
+        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+          <p className="">About Us</p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Industries</p>
+          <p className="">Services</p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Industries</p>
-          <i className="fa-solid fa-chevron-down"></i>
+        <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+          <p className=" py-[.75rem]">Products 1</p>
+          <p className=" py-[.75rem]">Products 1</p>
+          <p className=" py-[.75rem]">Products 1</p>
+        </div>
+        <div className="flex flex-col px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+          <p className="">Products</p>
         </div>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Industries</p>
-          <i className="fa-solid fa-chevron-down"></i>
+          <p className="">Career</p>
         </div>
       </div>
       <div

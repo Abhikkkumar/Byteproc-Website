@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.app{
+.app {
   width: 100%;
 }
 .fade-enter,
@@ -37,25 +37,10 @@
   position: fixed;
   top: 0;
   background-color: var(--col1);
+  z-index: 1;
 }
-h1{
-  font-size: 2rem !important;
-  font-weight: 600 !important;
+
+/* ---> dropdown */
+.dropdown {
+  box-shadow: 1px 1px 10px 1px var(--col2);
 }
-h5{
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-}
-/* @media (max-width: 767px) {
-  .header {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .headerMob {
-    display: none;
-  }
-  .header {
-    display: flex;
-  }
-} */
