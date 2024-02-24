@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.app{
+.app {
   width: 100%;
 }
 .fade-enter,
@@ -36,17 +36,10 @@
   position: fixed;
   top: 0;
   background-color: var(--col1);
+  z-index: 1;
 }
-/* @media (max-width: 767px) {
-  .header {
-    display: none;
-  }
+
+/* ---> dropdown */
+.dropdown {
+  box-shadow: 1px 1px 10px 1px var(--col2);
 }
-@media (min-width: 768px) {
-  .headerMob {
-    display: none;
-  }
-  .header {
-    display: flex;
-  }
-} */
