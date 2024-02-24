@@ -1,26 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sidebar.css";
+import { CSSTransition } from "react-transition-group";
 
 export default function Sidebar({ side }) {
+  const [service, setService] = useState(false);
+  const [prod, setProd] = useState(false);
+
+  const manageState = (elem) => {
+    if (elem == "prod") {
+      setService(false);
+      setProd((a) => !a);
+    } else {
+      setProd(false);
+      setService((a) => !a);
+    }
+  };
+  let navbottomClass = {};
+  if(service || prod){
+    navbottomClass = "sidebottom w-[100%] text-center top-[85vh] "
+  }else{
+    navbottomClass = "sidebottom w-[100%] text-center top-[70vh]"
+  }
   return (
     <div className="sidebar">
       <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
           <p className="">Home</p>
         </div>
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+        <div
+          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+          onClick={() => manageState("prod")}
+        >
           <p className="">About Us</p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+        {!service ? (
+          <CSSTransition
+            in={prod}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit={true}
+          >
+            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+            </div>
+          </CSSTransition>
+        ) : (
+          ""
+        )}
+        <div
+          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+          onClick={() => manageState("services")}
+        >
           <p className="">Services</p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
-        <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-          <p className=" py-[.75rem]">Products 1</p>
-          <p className=" py-[.75rem]">Products 1</p>
-          <p className=" py-[.75rem]">Products 1</p>
-        </div>
+        {!prod ? (
+          <CSSTransition
+            in={service}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit={true}
+          >
+            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+            </div>
+          </CSSTransition>
+        ) : (
+          ""
+        )}
+
         <div className="flex flex-col px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
           <p className="">Products</p>
         </div>
@@ -31,7 +84,7 @@ export default function Sidebar({ side }) {
       <div
         className={
           side
-            ? "sidebottom w-[100%] text-center"
+            ? navbottomClass
             : "sidebottom hide w-[100%] text-center"
         }
       >
