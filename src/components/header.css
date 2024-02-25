@@ -13,19 +13,22 @@
   font-weight: 500 !important;
   padding: 0 0.8%;
 }
-.navlists > div > a:hover {
+.navlists>div{
+  position: relative;
+}
+.navlists > div:hover {
   color: var(--col4);
 }
-.navlists > div > a::after {
+.below::after {
   content: "";
   width: 0;
   height: 3px;
   background-color: var(--col4);
   position: absolute;
-  bottom: -0.7rem;
+  bottom: -0.5rem;
   left: 0;
   transition: all 0.3s ease;
 }
-.navlists > div > a:hover::after {
+.below:hover::after {
   width: 100%;
 }

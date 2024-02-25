@@ -35,20 +35,20 @@ export default function Header() {
       <img
         className={
           isScrolled
-            ? "transition-all transition-[1.75s] ease-in w-[17%] lg:w-[13%] py-[.85rem]"
-            : "transition-all transition-[1.75s] ease-in w-[17%] lg:w-[13%] py-[1.85rem]"
+            ? "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[.85rem]"
+            : "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[1.85rem]"
         }
         src={logo}
         alt="logo"
       />
 
       <div className="navlists flex justify-between items-center min-w-[80%] text-[var(--col5)] ">
-        <div>
+        <div className="below">
           <NavLink to="/" className="uppercase hover:text-[var(--col3)]">
             Home
           </NavLink>
         </div>
-        <div>
+        <div className="below">
           <NavLink to="/" className="uppercase w-max">
             About Us
           </NavLink>
@@ -56,8 +56,8 @@ export default function Header() {
         <div
           className={
             isScrolled
-              ? "transition-all transition-[1.75s] ease-in relative rounded-t-lg py-[.85rem] px-[.55rem]"
-              : "transition-all transition-[1.75s] ease-in relative rounded-t-lg py-[1.85rem] px-[.55rem]"
+              ? "transition-all transition-[1.75s] ease-in-out relative rounded-t-lg py-[.85rem] px-[.55rem]"
+              : "transition-all transition-[1.75s] ease-in-out relative rounded-t-lg py-[1.85rem] px-[.55rem]"
           }
           onMouseEnter={() => setShowServices(true)}
           onMouseLeave={() => setShowServices(false)}
@@ -74,17 +74,17 @@ export default function Header() {
             <DropdownT arr={services} />
           </CSSTransition>
         </div>
-        <div>
+        <div className="below">
           <NavLink to="/" className="uppercase w-max">
             Career
           </NavLink>
         </div>
-        <div>
+        <div className="below">
           <NavLink to="/" className="uppercase">
             Product
           </NavLink>
         </div>
-        <div>
+        <div className="below">
           <NavLink to="/" className="uppercase w-max">
             Contact Us
           </NavLink>

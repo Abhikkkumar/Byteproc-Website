@@ -1,9 +1,9 @@
-@media(min-width:641px){
-  .sidebar{
+@media (min-width: 641px) {
+  .sidebar {
     display: none;
   }
 }
-.sidebar{
+.sidebar {
   z-index: 1;
 }
 
@@ -17,14 +17,16 @@
   transition: all 0.3s ease;
   z-index: inherit;
 }
+.sidelist>div:hover{
+  cursor: pointer;
+}
 .sidelist-hide {
   transform: translateX(-100%);
 }
 .sidebottom {
   position: fixed;
-  bottom: 0;
   transition: all 0.05s ease;
-  z-index: 2;
+  z-index: 1;
   /* background-color: rgba(255, 255, 255, 0.1); */
 }
 .hide {
