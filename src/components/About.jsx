@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import Img1 from "../assets/About.jpg";
+import Img1 from "../assets/byteproc-about.png";
 import Img2 from "../assets/byteproc slider2.png";
 import "./about.css";
 

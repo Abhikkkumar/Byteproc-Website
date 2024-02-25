@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/blue-logo.png";
+import logo from "../assets/byteproc-logo-pvt.png";
 import DropdownT from "./DropdownT";
 import { CSSTransition } from "react-transition-group";
 import { useState } from "react";

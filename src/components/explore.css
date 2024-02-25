@@ -1,0 +1,18 @@
+.explore{
+    /* padding: 100px 250px 50px 250px; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-color: var(--col3);
+}
+
+.explore a{
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.explore a:hover{
+    color: beige;
+}

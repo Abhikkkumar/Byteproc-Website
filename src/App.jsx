@@ -11,6 +11,7 @@ import Section3 from "./components/Section3";
 import About from "./components/About";
 import Section4 from "./components/Section4";
 import Services from "./components/Services";
+import Explore from "./components/Explore";
 
 function App() {
   const [side, setSide] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
+        <Explore/>
         <About/>
         <Section3/>
         <Services/>
