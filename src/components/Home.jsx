@@ -7,6 +7,7 @@ import Section4 from "./Section4";
 import Services from "./Services";
 import Explore from "./Explore";
 import Help from "./Help";
+import BusinessPartnerCarousel from "./BusinessPartnerCarousel";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <Services/>
         <Help/>
         <Section4/>
+        <BusinessPartnerCarousel />
         
       
     </div>

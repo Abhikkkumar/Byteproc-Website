@@ -36,7 +36,7 @@ export default function Header() {
         className={
           isScrolled
             ? "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[.85rem]"
-            : "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[1.85rem]"
+            : "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[1.25rem]"
         }
         src={logo}
         alt="logo"
@@ -54,11 +54,7 @@ export default function Header() {
           </NavLink>
         </div>
         <div
-          className={
-            isScrolled
-              ? "transition-all transition-[1.75s] ease-in-out relative rounded-t-lg py-[.85rem] px-[.55rem]"
-              : "transition-all transition-[1.75s] ease-in-out relative rounded-t-lg py-[1.85rem] px-[.55rem]"
-          }
+          className="transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] below"
           onMouseEnter={() => setShowServices(true)}
           onMouseLeave={() => setShowServices(false)}
         >

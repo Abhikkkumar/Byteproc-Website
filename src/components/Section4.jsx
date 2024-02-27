@@ -40,42 +40,42 @@ export default function Section4() {
 
         <div className="sec4_right">
           <div className="Sec4_Card" ref={ref}>
-            <h1>
+            <p >
               <p className="bold">
                 {" "}
                 <NumberAnimation n={500} inView={inView} /> +
               </p>
-            </h1>
+            </p>
             <p>Drones Flying</p>
           </div>
 
           <div className="Sec4_Card" ref={ref}>
-            <h1>
+            <p >
               <p className="bold">
                 {" "}
                 <NumberAnimation n={100} inView={inView} /> +
               </p>
-            </h1>
+            </p>
             <p>Pilot Training</p>
           </div>
 
           <div className="Sec4_Card">
-            <h1>
+            <p >
               <p className="bold">
                 {" "}
                 <NumberAnimation n={20} inView={inView} /> +
               </p>
-            </h1>
+            </p>
             <p>Vama Team</p>
           </div>
 
           <div className="Sec4_Card">
-            <h1>
+            <p >
               <p className="bold">
                 {" "}
                 <NumberAnimation n={700} inView={inView} /> +
               </p>
-            </h1>
+            </p>
             <p>Happy Customers</p>
           </div>
         </div>
