@@ -7,12 +7,6 @@ import Home from "./components/Home";
 import HeaderMob from "./components/HeaderMob";
 import Sidebar from "./components/Sidebar";
 import Footer2 from "./components/Footer2";
-import Section3 from "./components/Section3";
-import About from "./components/About";
-import Section4 from "./components/Section4";
-import Services from "./components/Services";
-import Explore from "./components/Explore";
-import Help from "./components/Help";
 
 function App() {
   const [side, setSide] = useState(false);
@@ -25,12 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
-        <Explore/>
-        <About/>
-        <Section3/>
-        <Services/>
-        <Help/>
-        <Section4/>
+        
         
         <Footer />
         <Footer2/>
