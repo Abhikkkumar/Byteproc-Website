@@ -12,6 +12,7 @@ import About from "./components/About";
 import Section4 from "./components/Section4";
 import Services from "./components/Services";
 import Explore from "./components/Explore";
+import Help from "./components/Help";
 
 function App() {
   const [side, setSide] = useState(false);
@@ -28,7 +29,9 @@ function App() {
         <About/>
         <Section3/>
         <Services/>
+        <Help/>
         <Section4/>
+        
         <Footer />
         <Footer2/>
 
