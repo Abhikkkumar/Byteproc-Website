@@ -17,7 +17,7 @@
 }
 
 .services-list div{
-    background: #262626;
+    background: var(--col3);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -46,7 +46,7 @@
 }
 
 .services-list div:hover{
-    background: var(--col3);
+    background: var(--col4);
     transform: translateY(-10px);
 }
 

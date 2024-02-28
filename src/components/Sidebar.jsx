@@ -16,45 +16,34 @@ export default function Sidebar({ side }) {
     }
   };
   let navbottomClass = {};
-  if(service || prod){
-    navbottomClass = "sidebottom w-[100%] text-center top-[85vh] "
-  }else{
-    navbottomClass = "sidebottom w-[100%] text-center top-[70vh]"
+  if (service || prod) {
+    navbottomClass = "sidebottom w-[100%] text-center top-[85vh] ";
+  } else {
+    navbottomClass = "sidebottom w-[100%] text-center top-[70vh]";
   }
   return (
     <div className="sidebar">
       <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Home</p>
+          <p className="">
+            <i className="fa-solid fa-house text-[var(--col4)]"></i> Home
+          </p>
         </div>
-        <div
-          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
-          onClick={() => manageState("prod")}
-        >
-          <p className="">About Us</p>
-          <i className="fa-solid fa-chevron-down"></i>
+        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+          <p className="">
+            <i className="fa-solid fa-circle-info text-[var(--col4)]"></i> About
+            Us
+          </p>
         </div>
-        {!service ? (
-          <CSSTransition
-            in={prod}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit={true}
-          >
-            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-              <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
-            </div>
-          </CSSTransition>
-        ) : (
-          ""
-        )}
+
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
           onClick={() => manageState("services")}
         >
-          <p className="">Services</p>
+          <p className="">
+            <i className="fa-solid fa-layer-group text-[var(--col4)]"></i>{" "}
+            Services
+          </p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
         {!prod ? (
@@ -74,18 +63,42 @@ export default function Sidebar({ side }) {
           ""
         )}
 
-        <div className="flex flex-col px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Products</p>
+        <div
+          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+          onClick={() => manageState("prod")}
+        >
+          <p className="">
+            <i className="fa-solid fa-newspaper text-[var(--col4)]"></i>{" "}
+            Products
+          </p>
+          <i className="fa-solid fa-chevron-down"></i>
         </div>
+        {!service ? (
+          <CSSTransition
+            in={prod}
+            timeout={300}
+            classNames="fade"
+            unmountOnExit={true}
+          >
+            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+              <p className=" py-[.75rem]">Products 1</p>
+            </div>
+          </CSSTransition>
+        ) : (
+          ""
+        )}
         <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
-          <p className="">Career</p>
+          <p className="">
+            {" "}
+            <i class="fa-solid fa-address-card"></i> Career
+          </p>
         </div>
       </div>
       <div
         className={
-          side
-            ? navbottomClass
-            : "sidebottom hide w-[100%] text-center"
+          side ? navbottomClass : "sidebottom hide w-[100%] text-center"
         }
       >
         <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">

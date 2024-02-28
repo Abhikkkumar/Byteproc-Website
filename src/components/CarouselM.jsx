@@ -24,56 +24,40 @@ export default function CarouselM() {
         <SwiperSlide className="slides ms1">
           <div className="slides-inner">
             {" "}
-            <h1>Slide1</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam, accusantium?
-            </p>
+            <div className="m-slides-text">
+              <h1>Slide1</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Minima, architecto?
+              </p>
+              <button className="mx-auto">click me</button>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="slides ms2">
           <div className="slides-inner">
-            <h1>Slide2</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Necessitatibus, facere.
-            </p>
+            <div className="m-slides-text">
+              <h1>Slide1</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Minima, architecto?
+              </p>
+              <button className="mx-auto">click me</button>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="slides ms3">
           <div className="slides-inner">
-            <h1>Slide3</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
-              veniam!
-            </p>
+            <div className="m-slides-text">
+              <h1>Slide1</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Minima, architecto?
+              </p>
+              <button className="mx-auto">click me</button>
+            </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className="slides ms5">
-            <div className="slides-inner">
-              
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="slides ms6">
-            <div className="slides-inner">
-              
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="slides ms7">
-            <div className="slides-inner">
-              
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="slides ms8">
-            <div className="slides-inner">
-              
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="slides ms9">
-            <div className="slides-inner">
-              
-            </div>
-          </SwiperSlide> */}
       </Swiper>
     </div>
   );

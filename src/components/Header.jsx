@@ -32,7 +32,7 @@ export default function Header({ setAddress }) {
     };
   }, []);
   return (
-    <div className="hidden sm:flex justify-between px-[.5%] md:px-[1.5%]  header">
+    <div className=" justify-between px-[.5%] md:px-[1.5%]  header">
       <img
         className={
           isScrolled
@@ -46,31 +46,36 @@ export default function Header({ setAddress }) {
         }}
       />
 
-      <div className="navlists flex justify-between items-center min-w-[75%] text-[var(--col5)] ">
+      <div className="navlists flex justify-between items-center min-w-[80%] text-[var(--col5)] ">
         <div className="">
-          <NavLink to="/" className="uppercase hover:text-[var(--col3)] below px-[.5rem]">
-            <i className="fa-solid fa-user text-[var(--col4)]"></i>
-            <i className="fa-regular fa-user text-[var(--col4)]"></i>
+          <NavLink
+            to="/"
+            className="uppercase hover:text-[var(--col3)] below px-[.5rem]"
+          >
+            <i className="fa-solid fa-house text-[var(--col4)]"></i>
+            <i className="fa-regular fa-house text-[var(--col4)]"></i>
             Home
           </NavLink>
         </div>
         <div className="">
           <NavLink to="/about" className="uppercase w-max below px-[.5rem]">
-            <i className="fa-solid fa-user text-[var(--col4)]"></i>
-            <i className="fa-regular fa-user text-[var(--col4)]"></i>
+            <i className="fa-solid fa-circle-info text-[var(--col4)]"></i>
+            <i className="fa-regular fa-circle-info text-[var(--col4)]"></i>
             About Us
           </NavLink>
         </div>
         <div
-          className="transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] below"
+          className="below flex items-end transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] "
           onMouseEnter={() => setShowServices(true)}
           onMouseLeave={() => setShowServices(false)}
         >
           <NavLink to="/services" className="uppercase below px-[.5rem]">
-            <i className="fa-solid fa-user text-[var(--col4)]"></i>
-            <i className="fa-regular fa-user text-[var(--col4)]"></i>
-            Services
+            <i className="fa-solid fa-layer-group text-[var(--col4)]"></i>
+            <i className="fa-regular fa-layer-group text-[var(--col4)]"></i>
+            <p className="flex items-center">Services </p>
+            
           </NavLink>
+          <i className="fa-solid fa-chevron-down ml-[5px] mb-[5px] mr-[3px]"></i>
           <CSSTransition
             in={showServices}
             timeout={400}
@@ -82,23 +87,26 @@ export default function Header({ setAddress }) {
         </div>
         <div className="">
           <NavLink to="/career" className="uppercase w-max below px-[.5rem]">
-            <i className="fa-solid fa-user text-[var(--col4)]"></i>
-            <i className="fa-regular fa-user text-[var(--col4)]"></i>
+          
+            <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
+            <i className="fa-regular fa-briefcase text-[var(--col4)]"></i>
             Career
           </NavLink>
         </div>
         <div className="">
           <NavLink to="/product" className="uppercase below px-[.5rem]">
-            <i className="fa-solid fa-user text-[var(--col4)]"></i>
-            <i className="fa-regular fa-user text-[var(--col4)]"></i>
+            <i className="fa-solid fa-newspaper text-[var(--col4)]"></i>
+            <i className="fa-regular fa-newspaper text-[var(--col4)]"></i>
             Product
           </NavLink>
         </div>
-        <div className=" hover:text-[#fff] ">
-          <i
-            className="fa-solid fa-info text-[1.2rem] text-[var(--col4)] mr-[.5rem] cursor-pointer p-[.5rem]"
+        <div className=" hover:text-[#fff] flex items-center">
+          <div
+            className="cursor-pointer p-[.3rem] w-[30px] h-[30px] info mr-[.3rem]"
             onClick={() => setAddress((a) => !a)}
-          ></i>
+          >
+            <i className="fa-solid fa-info text-[1rem] text-[var(--col3)]"></i>
+          </div>
           <button
             className="uppercase w-max hover:text-[#fff] contact-btn"
             onClick={() => {

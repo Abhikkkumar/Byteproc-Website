@@ -1,10 +1,11 @@
-@media (min-width: 641px) {
+@media (min-width: 769px) {
   .sidebar {
     display: none;
   }
 }
 .sidebar {
   z-index: 1;
+  
 }
 
 .sidelist {

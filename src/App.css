@@ -40,9 +40,7 @@
   background-color: var(--col1);
   z-index: 1;
 }
-.home{
-  padding-top:4.5rem;
-}
+
 
 /* ---> dropdown */
 .dropdown {

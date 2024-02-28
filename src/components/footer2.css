@@ -1,9 +1,19 @@
 .footer2 {
-    --text-color-1: #fff;
-    padding: 0.5% 0.3rem;
-    background-color: #312c3a;
-    color: var(--text-color-1);
-    font-size: 0.9rem;
+  --text-color-1: #fff;
+  padding: 0.5% 0.3rem;
+  background-color: #312c3a;
+  color: var(--text-color-1);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 710px) {
+  .footer2 {
+    text-align: center;
+    justify-content: center !important;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
- 
-  
+  .footer2 > div {
+    margin-top: 0.5rem;
+  }
+}

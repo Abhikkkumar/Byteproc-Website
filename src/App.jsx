@@ -20,7 +20,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Header setAddress={setAddress} />
-        <HeaderMob side={side} setSide={setSide} />
+        <HeaderMob side={side} setSide={setSide} setAddress={setAddress}/>
         <Sidebar side={side} />
         <Address address={address} setAddress={setAddress}/>
         <Routes>

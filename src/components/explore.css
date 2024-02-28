@@ -1,17 +1,15 @@
-.explore{
-    padding: 3%;
-    
-    text-align: center;
-    color: white;
-    background-color: var(--col3);
+.explore {
+  text-align: center;
+  color: white;
+  background-color: var(--col3);
 }
 
-.explore a{
-    font-weight: bold;
-    font-size: large;
-    text-decoration: underline;
+.explore a {
+  font-weight: bold;
+  font-size: large;
+  text-decoration: underline;
 }
 
-.explore a:hover{
-    color: beige;
+.explore a:hover {
+  color: beige;
 }

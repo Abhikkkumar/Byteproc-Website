@@ -14,7 +14,7 @@ import ProjectCarousel from "./ProjectCarousel";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home pt-[3.5rem]">
         <Carousel/>
         <CarouselM/>
         <Explore/>
