@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/byteproc-logo-pvt.png";
 import DropdownT from "./DropdownT";
 import { CSSTransition } from "react-transition-group";
@@ -7,6 +7,7 @@ import "./header.css";
 import { useEffect } from "react";
 
 export default function Header({ setAddress }) {
+  const navigate = useNavigate();
   const services = [
     "Website Development",
     "Software Development",
@@ -35,25 +36,28 @@ export default function Header({ setAddress }) {
       <img
         className={
           isScrolled
-            ? "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[.85rem]"
-            : "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[1.25rem]"
+            ? "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[.85rem] hover:cursor-pointer"
+            : "transition-all transition-[1.75s] ease-in-out w-[17%] lg:w-[13%] py-[1.25rem] hover:cursor-pointer"
         }
         src={logo}
         alt="logo"
+        onClick={() => {
+          navigate("/");
+        }}
       />
 
       <div className="navlists flex justify-between items-center min-w-[75%] text-[var(--col5)] ">
-        <div className="below">
-          <NavLink to="/" className="uppercase hover:text-[var(--col3)]">
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-regular fa-user"></i>
+        <div className="">
+          <NavLink to="/" className="uppercase hover:text-[var(--col3)] below px-[.5rem]">
+            <i className="fa-solid fa-user text-[var(--col4)]"></i>
+            <i className="fa-regular fa-user text-[var(--col4)]"></i>
             Home
           </NavLink>
         </div>
-        <div className="below">
-          <NavLink to="/" className="uppercase w-max">
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-regular fa-user"></i>
+        <div className="">
+          <NavLink to="/about" className="uppercase w-max below px-[.5rem]">
+            <i className="fa-solid fa-user text-[var(--col4)]"></i>
+            <i className="fa-regular fa-user text-[var(--col4)]"></i>
             About Us
           </NavLink>
         </div>
@@ -62,9 +66,9 @@ export default function Header({ setAddress }) {
           onMouseEnter={() => setShowServices(true)}
           onMouseLeave={() => setShowServices(false)}
         >
-          <NavLink to="/" className="uppercase">
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-regular fa-user"></i>
+          <NavLink to="/services" className="uppercase below px-[.5rem]">
+            <i className="fa-solid fa-user text-[var(--col4)]"></i>
+            <i className="fa-regular fa-user text-[var(--col4)]"></i>
             Services
           </NavLink>
           <CSSTransition
@@ -76,26 +80,31 @@ export default function Header({ setAddress }) {
             <DropdownT arr={services} />
           </CSSTransition>
         </div>
-        <div className="below">
-          <NavLink to="/" className="uppercase w-max">
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-regular fa-user"></i>
+        <div className="">
+          <NavLink to="/career" className="uppercase w-max below px-[.5rem]">
+            <i className="fa-solid fa-user text-[var(--col4)]"></i>
+            <i className="fa-regular fa-user text-[var(--col4)]"></i>
             Career
           </NavLink>
         </div>
-        <div className="below">
-          <NavLink to="/" className="uppercase">
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-regular fa-user"></i>
+        <div className="">
+          <NavLink to="/product" className="uppercase below px-[.5rem]">
+            <i className="fa-solid fa-user text-[var(--col4)]"></i>
+            <i className="fa-regular fa-user text-[var(--col4)]"></i>
             Product
           </NavLink>
         </div>
-        <div className=" hover:text-[#fff]">
+        <div className=" hover:text-[#fff] ">
           <i
             className="fa-solid fa-info text-[1.2rem] text-[var(--col4)] mr-[.5rem] cursor-pointer p-[.5rem]"
             onClick={() => setAddress((a) => !a)}
           ></i>
-          <button className="uppercase w-max hover:text-[#fff] contact-btn">
+          <button
+            className="uppercase w-max hover:text-[#fff] contact-btn"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
             Contact Us
           </button>
         </div>

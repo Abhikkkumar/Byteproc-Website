@@ -16,11 +16,12 @@
   font-weight: 500 !important;
   padding: 0 0.8%;
 }
-.fa-info{
+.fa-info {
+  padding: .3rem;
   text-shadow: 1px 1px 4px #aaa;
 }
-.fa-info:hover{
-  text-shadow: 2px 2px 8px #797373;
+.fa-info:hover {
+  text-shadow: 1px 1px 18px #797373;
 }
 .navlists > div {
   position: relative;
@@ -31,30 +32,34 @@
 .contact-btn {
   border: 1px solid var(--col3);
   border-radius: 5px;
-  padding: .3rem 1.25rem;
+  padding: 0.3rem 1.25rem;
   background-color: var(--col3);
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
 }
-.contact-btn:hover{
+.contact-btn:hover {
   color: #fff !important;
   background-color: var(--col4);
   border-color: var(--col4);
 }
-.below .fa-solid{
+.below .fa-solid {
   display: none;
 }
-.below .fa-regular{
+.below .fa-regular {
   display: flex;
 }
 
-.below:hover .fa-solid{
+.below:hover .fa-solid,
+.active .fa-solid {
   display: flex;
 }
-.below:hover .fa-regular{
+.below:hover .fa-regular,
+.active .fa-regular {
   display: none;
 }
-
+.active {
+  color:var(--col3);
+}
 
 .below::after {
   content: "";
@@ -63,9 +68,19 @@
   background-color: var(--col4);
   position: absolute;
   bottom: -0.4rem;
-  left: 0;
+  right: 0;
   transition: all 0.3s ease;
 }
-.below:hover::after {
+.below:hover::after{
   width: 100%;
+}
+.active::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--col4);
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  transition: all 0.3s ease;
 }
