@@ -7,15 +7,18 @@ import Home from "./components/Home";
 import HeaderMob from "./components/HeaderMob";
 import Sidebar from "./components/Sidebar";
 import Footer2 from "./components/Footer2";
+import Address from "./components/Address";
 
 function App() {
   const [side, setSide] = useState(false);
+  const [address,setAddress] = useState(true);
   return (
     <div>
       <BrowserRouter>
-        <Header />
+        <Header setAddress={setAddress} />
         <HeaderMob side={side} setSide={setSide} />
         <Sidebar side={side} />
+        <Address address={address}/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>

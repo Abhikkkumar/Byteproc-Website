@@ -25,29 +25,38 @@ export default function Carousel() {
           <SwiperSlide className="slides s1">
             <div className="slides-inner">
               {" "}
-              <h1>Slide1</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Minima, architecto?
-              </p>
+              <div className="slides-text">
+                <h1>Slide1</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Minima, architecto?
+                </p>
+                <button >click me</button>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s2">
             <div className="slides-inner">
-              <h1>Slide2</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-                distinctio natus{" "}
-              </p>
+              <div className="slides-text">
+                <h1>Slide1</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Minima, architecto?
+                </p>
+                <button >click me</button>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s3">
             <div className="slides-inner">
-              <h1>Slide3</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                enim.
-              </p>
+              <div className="slides-text">
+                <h1>Slide1</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Minima, architecto?
+                </p>
+                <button >click me</button>
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>

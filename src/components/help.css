@@ -3,7 +3,7 @@
   margin: 0.5rem auto;
 }
 .help-top > * {
-    width: 33%;
+  width: 33%;
 }
 .help .help-top {
   background-color: var(--col3);
@@ -15,26 +15,26 @@
   padding: 5% 2%;
   color: white;
   margin: 0rem 2rem -2rem 2rem;
-  
 }
-.help-img{
-    width: 100px;
-    height: 100px;
-    display: grid;
-    place-items: center;
-    background-color: white;
-    border-radius: 50%;
+.help-img {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .help-top img {
-    width: 50%;
+  width: 50%;
 }
 
 .help-img:hover {
   background-color: var(--col5);
 }
-.help-top-2{
-    text-align: right;
+.help-top-2 {
+  text-align: right;
+  font-size: 1.2rem;
 }
 
 .help-below {
@@ -43,13 +43,12 @@
   align-items: stretch;
   position: relative;
   z-index: -1;
-  
 }
 
-.help-below-left{
-    background-image: url("../assets/Byteproc-about3.webp");
-    background-position: 40% 0;
-    background-size: cover ;
+.help-below-left {
+  background-image: url("../assets/Byteproc-about3.webp");
+  background-position: 40% 0;
+  background-size: cover;
 }
 .help-below-left {
   width: 50%;
@@ -58,7 +57,7 @@
 .help-below-right {
   width: 50%;
   background-color: var(--col5);
-  padding: 5% ;
+  padding: 5%;
 }
 
 @media (max-width: 992px) {
@@ -70,25 +69,22 @@
     width: 100%;
   }
 }
-@media(max-width:768px){
-    .help-top > * {
-        width: 90%;
-        margin:auto;
-        text-align: center;
-    }
-    .help-img{
-        width: 100px;
-        height: 100px;
-        margin:.75rem auto;
-        
-    }
-    
+@media (max-width: 768px) {
+  .help-top > * {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .help-img {
+    width: 100px;
+    height: 100px;
+    margin: 0.75rem auto;
+  }
 }
-@media(max-width:500px){
-    .help-below-left{
-        height: 60vh;
-    }
-    
+@media (max-width: 500px) {
+  .help-below-left {
+    height: 60vh;
+  }
 }
 
 .help-below-right-1 {

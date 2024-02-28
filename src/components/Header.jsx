@@ -42,14 +42,18 @@ export default function Header() {
         alt="logo"
       />
 
-      <div className="navlists flex justify-between items-center min-w-[80%] text-[var(--col5)] ">
+      <div className="navlists flex justify-between items-center min-w-[75%] text-[var(--col5)] ">
         <div className="below">
           <NavLink to="/" className="uppercase hover:text-[var(--col3)]">
+            <i className="fa-solid fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             Home
           </NavLink>
         </div>
         <div className="below">
           <NavLink to="/" className="uppercase w-max">
+            <i className="fa-solid fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             About Us
           </NavLink>
         </div>
@@ -59,6 +63,8 @@ export default function Header() {
           onMouseLeave={() => setShowServices(false)}
         >
           <NavLink to="/" className="uppercase">
+            <i className="fa-solid fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             Services
           </NavLink>
           <CSSTransition
@@ -72,18 +78,23 @@ export default function Header() {
         </div>
         <div className="below">
           <NavLink to="/" className="uppercase w-max">
+            <i className="fa-solid fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             Career
           </NavLink>
         </div>
         <div className="below">
           <NavLink to="/" className="uppercase">
+            <i className="fa-solid fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             Product
           </NavLink>
         </div>
-        <div className="below">
-          <NavLink to="/" className="uppercase w-max">
+        <div className=" hover:text-[#fff]">
+          <i className="fa-solid fa-info text-[1.2rem] text-[var(--col4)] mr-[.5rem] cursor-pointer p-[.5rem]"></i>
+          <button className="uppercase w-max hover:text-[#fff] contact-btn">
             Contact Us
-          </NavLink>
+          </button>
         </div>
       </div>
     </div>

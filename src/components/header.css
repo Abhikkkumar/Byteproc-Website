@@ -9,23 +9,60 @@
 }
 .navlists > div > a {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
   font-weight: 500 !important;
   padding: 0 0.8%;
 }
-.navlists>div{
+.fa-info{
+  text-shadow: 1px 1px 4px #aaa;
+}
+.fa-info:hover{
+  text-shadow: 2px 2px 8px #797373;
+}
+.navlists > div {
   position: relative;
 }
 .navlists > div:hover {
   color: var(--col4);
 }
+.contact-btn {
+  border: 1px solid var(--col3);
+  border-radius: 5px;
+  padding: .3rem 1.25rem;
+  background-color: var(--col3);
+  color: #fff;
+  cursor:pointer;
+}
+.contact-btn:hover{
+  color: #fff !important;
+  background-color: var(--col4);
+  border-color: var(--col4);
+}
+.below .fa-solid{
+  display: none;
+}
+.below .fa-regular{
+  display: flex;
+}
+
+.below:hover .fa-solid{
+  display: flex;
+}
+.below:hover .fa-regular{
+  display: none;
+}
+
+
 .below::after {
   content: "";
   width: 0;
   height: 3px;
   background-color: var(--col4);
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.4rem;
   left: 0;
   transition: all 0.3s ease;
 }

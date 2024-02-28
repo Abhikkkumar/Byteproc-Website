@@ -49,3 +49,9 @@
     background: var(--col3);
     transform: translateY(-10px);
 }
+
+@keyframes servicesAnimation{
+    0%{
+        
+    }
+}

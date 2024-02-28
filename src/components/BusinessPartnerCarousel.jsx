@@ -25,20 +25,23 @@ export default function BusinessPartnerCarousel() {
       <div >
         <Swiper
           spaceBetween={20}
+          
           loop={true}
           centeredSlides={false}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           modules={[Autoplay, Pagination]}
           className="mySwiper"
           breakpoints={{
-            // when window width is >= 320px
-
+            // when window width is >= 300px
+            300:{
+              slidesPerView:2
+            },
             578: {
               slidesPerView: 3,
             },

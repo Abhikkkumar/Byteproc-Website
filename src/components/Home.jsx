@@ -8,6 +8,8 @@ import Services from "./Services";
 import Explore from "./Explore";
 import Help from "./Help";
 import BusinessPartnerCarousel from "./BusinessPartnerCarousel";
+import Parallex from "../Parallex";
+import ProjectCarousel from "./ProjectCarousel";
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
         <About/>
         <Section3/>
         <Services/>
+        <ProjectCarousel />
+        <Parallex/>
         <Help/>
         <Section4/>
         <BusinessPartnerCarousel />
