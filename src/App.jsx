@@ -13,12 +13,12 @@ function App() {
   const [side, setSide] = useState(false);
   const [address,setAddress] = useState(true);
   return (
-    <div>
+    <div className="app">
       <BrowserRouter>
         <Header setAddress={setAddress} />
         <HeaderMob side={side} setSide={setSide} />
         <Sidebar side={side} />
-        <Address address={address}/>
+        <Address address={address} setAddress={setAddress}/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>

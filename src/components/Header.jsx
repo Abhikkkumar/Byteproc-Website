@@ -6,7 +6,7 @@ import { useState } from "react";
 import "./header.css";
 import { useEffect } from "react";
 
-export default function Header() {
+export default function Header({ setAddress }) {
   const services = [
     "Website Development",
     "Software Development",
@@ -91,7 +91,10 @@ export default function Header() {
           </NavLink>
         </div>
         <div className=" hover:text-[#fff]">
-          <i className="fa-solid fa-info text-[1.2rem] text-[var(--col4)] mr-[.5rem] cursor-pointer p-[.5rem]"></i>
+          <i
+            className="fa-solid fa-info text-[1.2rem] text-[var(--col4)] mr-[.5rem] cursor-pointer p-[.5rem]"
+            onClick={() => setAddress((a) => !a)}
+          ></i>
           <button className="uppercase w-max hover:text-[#fff] contact-btn">
             Contact Us
           </button>

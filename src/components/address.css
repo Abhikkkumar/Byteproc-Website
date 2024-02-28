@@ -1,1 +1,27 @@
 
+.address{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    /* height: 140vh; */
+    width: 340px;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 5;
+    border-left:1px solid #aaa;
+    box-shadow: 1px 1px 10px 2px #aaa;
+    
+}
+.address .fa-xmark{
+    position: absolute;
+    top:.3rem;
+    left: .3rem;
+    font-size: 1.5rem;
+}
+.address a:hover{
+color:var(--col3)
+}
