@@ -58,6 +58,7 @@
 }
 .below .fa-regular {
   display: flex;
+  
 }
 
 .below:hover .fa-solid,
