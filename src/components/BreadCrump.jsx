@@ -9,7 +9,8 @@ export default function BreadrCump({ bprops }) {
       return (
         <>
           <Link to={`${generateLink(name)}`}>{name} </Link>
-          <i class="fa-solid fa-angle-right"></i>
+          {/* <i class="fa-solid fa-angle-right"></i> */}
+          <span className="font-[700] text-[1.2rem]"> / </span>
         </>
       );
     } else {

@@ -1,0 +1,16 @@
+
+
+@media(max-width:768px){
+    .mvv>div{
+        width: 100%;
+    
+    }
+    .mvv>div:nth-child(2){
+        padding-left: 1rem;
+
+    }
+}
+.mvv-active{
+    background-color: var(--col3);
+    color:var(--col1)
+}

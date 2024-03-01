@@ -3,6 +3,7 @@ import BreadrCump from './BreadCrump'
 import About from './About'
 import Section4 from './Section4'
 import BusinessPartnerCarousel from './BusinessPartnerCarousel'
+import MVV from './MVV'
 
 export default function AboutPage() {
   const prop = {
@@ -14,6 +15,8 @@ export default function AboutPage() {
     <div className='pt-[5rem]'>
       <BreadrCump bprops={prop}/>
       <About />
+      <MVV />
+
       <Section4 />
       <BusinessPartnerCarousel />
       
