@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./sidebar.css";
 import { CSSTransition } from "react-transition-group";
+import { useNavigate } from "react-router-dom";
 
 export default function Sidebar({ side }) {
+  const navigate =useNavigate();
   const [service, setService] = useState(false);
   const [prod, setProd] = useState(false);
 
@@ -24,14 +26,16 @@ export default function Sidebar({ side }) {
   return (
     <div className="sidebar">
       <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]" 
+        onClick={()=>navigate("/")}>
           <p className="">
             <i className="fa-solid fa-house text-[var(--col4)]"></i> Home
           </p>
         </div>
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+        onClick={()=>navigate("/about-us")}>
           <p className="">
-            <i className="fa-solid fa-circle-info text-[var(--col4)]"></i> About
+            <i className="fa-solid fa-circle-info text-[var(--col4)]" ></i> About
             Us
           </p>
         </div>

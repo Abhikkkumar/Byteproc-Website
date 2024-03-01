@@ -12,14 +12,16 @@ import services1 from "../assets/header/s.png";
 
 export default function Header({ setAddress }) {
   const navigate = useNavigate();
-  const services = [
+  const servicesList = [
     "Website Development",
     "Software Development",
     "App development",
     "API Development",
     "Digital Marketing",
   ];
-  const [showServices, setShowServices] = useState(false);
+  const careerList = ["Full-Time Role", "Internship ", "Workshops"];
+  const [services, showServices] = useState(false);
+  const [career, showCareer] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -57,45 +59,65 @@ export default function Header({ setAddress }) {
             className="uppercase hover:text-[var(--col3)] below px-[.5rem]"
           >
             <i className="fa-solid fa-house text-[var(--col4)]"></i>
-            <img src={home} className="fa-regular fa-house text-[var(--col4)] w-[1rem]"></img>
+            <img
+              src={home}
+              className="fa-regular fa-house text-[var(--col4)] w-[1rem]"
+            ></img>
             Home
           </NavLink>
         </div>
         <div className="">
           <NavLink to="/about-us" className="uppercase w-max below px-[.5rem]">
             <i className="fa-solid fa-circle-info text-[var(--col4)]"></i>
-            <img src={about} className="fa-regular fa-circle-info text-[var(--col4)] w-[1rem]"></img>
+            <img
+              src={about}
+              className="fa-regular fa-circle-info text-[var(--col4)] w-[1rem]"
+            ></img>
             About Us
           </NavLink>
         </div>
         <div
-          className="below flex items-end transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] "
-          onMouseEnter={() => setShowServices(true)}
-          onMouseLeave={() => setShowServices(false)}
+          className=" flex items-end transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] "
+          onMouseEnter={() => showServices(true)}
+          onMouseLeave={() => showServices(false)}
         >
           <NavLink to="/services" className="uppercase below px-[.5rem]">
             <i className="fa-solid fa-layer-group text-[var(--col4)]"></i>
             <img src={services1} className="fa-regular   w-[1rem]" />
             <p className="flex items-center">Services </p>
-            
           </NavLink>
           <i className="fa-solid fa-chevron-down ml-[5px] mb-[5px] mr-[3px]"></i>
           <CSSTransition
-            in={showServices}
+            in={services}
             timeout={400}
             classNames="fade"
             unmountOnExit={true}
           >
-            <DropdownT arr={services} />
+            <DropdownT arr={servicesList} />
           </CSSTransition>
         </div>
-        <div className="">
-          <NavLink to="/career" className="uppercase w-max below px-[.5rem]">
-          
+        <div
+          className=" flex items-end transition-all transition-[1.75s] ease-in-out relative rounded-t-lg px-[.55rem] "
+          onMouseEnter={() => showCareer(true)}
+          onMouseLeave={() => showCareer(false)}
+        >
+          <NavLink to="/career" className="uppercase below w-max below px-[.5rem]">
             <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
-            <img src={career} className="fa-regular fa-briefcase text-[var(--col4)] w-[1rem]"></img>
+            <img
+              src={career}
+              className="fa-regular  text-[var(--col4)] w-[1rem]"
+            ></img>
             Career
           </NavLink>
+          <i className="fa-solid fa-chevron-down ml-[5px] mb-[5px] mr-[3px]"></i>
+          <CSSTransition
+            in={career}
+            timeout={400}
+            classNames="fade"
+            unmountOnExit={true}
+          >
+            <DropdownT arr={careerList} />
+          </CSSTransition>
         </div>
         <div className="">
           <NavLink to="/product" className="uppercase below px-[.5rem]">

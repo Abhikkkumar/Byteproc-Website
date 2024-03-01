@@ -8,11 +8,11 @@ export default function MVV() {
   const [value, setValue] = useState(false);
 
   return (
-    <div className="mvv flex items-center flex-wrap-reverse">
-      <div className="w-[50%] p-[1rem]">
+    <div className="mvv flex items-center justify-around flex-wrap-reverse">
+      <div className="w-[45%] p-[1rem]">
         <img src={img1} alt="" className="w-full" />
       </div>
-      <div className="w-[50%] py-[1.5rem] ">
+      <div className="w-[45%] py-[1.5rem] ">
         <p className="text-[var(--col3)]">About Our Company</p>
         <h1>Byteproc Solution Pvt. Ltd.</h1>
         <div>

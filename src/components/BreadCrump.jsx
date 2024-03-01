@@ -5,19 +5,23 @@ import generateLink from "./GenerateLink";
 
 export default function BreadrCump({ bprops }) {
   function giveBreadNav(name, i, arr) {
+    
     if (i < arr.length - 1) {
       return (
         <>
           <Link to={`${generateLink(name)}`}>{name} </Link>
+          
           {/* <i class="fa-solid fa-angle-right"></i> */}
           <span className="font-[700] text-[1.2rem]"> / </span>
         </>
       );
     } else {
-      return (
+      return (<>
         <Link to={`${generateLink(name)}`} className="active-bread">
           {name}
         </Link>
+        
+        </>
       );
     }
   }

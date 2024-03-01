@@ -3,8 +3,7 @@ function generateLink(string) {
     return "/";
   }
   let result = string.replace(/ /g, "-");
-  result = result.toLowerCase();
-
+  result = `/${result.toLowerCase()}`;
   return result;
 }
 export default generateLink;
