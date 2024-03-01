@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
         <Header setAddress={setAddress} />
         <HeaderMob side={side} setSide={setSide} setAddress={setAddress}/>
-        <Sidebar side={side} />
+        <Sidebar side={side} setSide={setSide} />
         <Address address={address} setAddress={setAddress}/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
