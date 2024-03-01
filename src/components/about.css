@@ -10,11 +10,11 @@
   --dark-blue-bg: #1b1525;
   --text-color-1: #fff;
   width: 100%;
-  padding-top: 5%;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 30px;
+  
   background-color: rgba(255, 255, 255, 0.95);
 }
 .sectionImg {

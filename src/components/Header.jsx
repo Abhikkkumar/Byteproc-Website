@@ -62,7 +62,7 @@ export default function Header({ setAddress }) {
           </NavLink>
         </div>
         <div className="">
-          <NavLink to="/about" className="uppercase w-max below px-[.5rem]">
+          <NavLink to="/about-us" className="uppercase w-max below px-[.5rem]">
             <i className="fa-solid fa-circle-info text-[var(--col4)]"></i>
             <img src={about} className="fa-regular fa-circle-info text-[var(--col4)] w-[1rem]"></img>
             About Us

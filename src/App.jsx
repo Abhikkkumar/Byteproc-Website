@@ -25,7 +25,7 @@ function App() {
         <Address address={address} setAddress={setAddress}/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/about-us" element={<AboutPage />}></Route>
           <Route path="/career" element={<Career />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/product" element={<Product />}></Route>

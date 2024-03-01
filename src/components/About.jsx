@@ -6,8 +6,8 @@ import "./about.css";
 
 export default function About() {
   return (
-    <div className="AboutContainer">
-      <div className="section1">
+    <div className="AboutContainer ">
+      <div className="section1 my-[.75rem]">
         <div className="sectionImg">
           <img src={Img1} alt="" />
         </div>
@@ -56,7 +56,7 @@ export default function About() {
           </div>
           <NavLink to="/">
             {" "}
-            <button className="know-more">KNOW MORE</button>
+            <button className="know-more w-[100px]">KNOW MORE</button>
           </NavLink>
         </div>
       </div>
