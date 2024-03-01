@@ -5,7 +5,7 @@
     width: 100%;
     /* background-image: url("../img/section3/sec3bg.jpg"); */
     background-image: url("../assets/byteproc parallex.png");
-    min-height: 50vh;
+    /* min-height: 50vh; */
     display: flex;
     align-items: stretch;
     background-size: cover;
@@ -16,7 +16,6 @@
     padding: 2.6rem 1rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-  
     text-align: center;
     color: var(--text-color-1);
   }

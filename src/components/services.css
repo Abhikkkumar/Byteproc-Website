@@ -8,7 +8,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
+    
 }
 
 .sub-title{
@@ -16,13 +17,24 @@
     text-align: center;
 }
 
-.services-list div{
+.services-list >div{
+    max-width: 450px;
     background: var(--col3);
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    /* font-size: 13px; */
+    /* font-weight: 300; */
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    color: var(--col1);
+    
+}
+@media(max-width:450px){
+    .services-list >div{
+        padding: 1.5rem;
+    }
+    .services-list p{
+        font-size: 1rem;
+    }
 }
 
 .services-list div i{
@@ -31,21 +43,26 @@
 
 }
 
-.services-list div h2{
+/* .services-list div h2{
     font-size: 30px !important;
     font-weight: 500 !important;
-    margin-bottom: 15px !important;
-}
+    margin-bottom: 10px !important;
+    color: var(--col1);
+} */
 
-.services-list div a{
+.services-list>div a{
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
+    /* font-size: 12px; */
+    /* margin-top: 20px; */
     display: inline-block;
 }
+.services-list p{
+    color: var(--col1);
+    font-size: .9rem;
+}
 
-.services-list div:hover{
+.services-list>div:hover{
     background: var(--col4);
     transform: translateY(-10px);
 }

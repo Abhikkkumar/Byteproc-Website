@@ -46,7 +46,7 @@ export default function Header({ setAddress }) {
         }}
       />
 
-      <div className="navlists flex justify-between items-center min-w-[80%] text-[var(--col5)] ">
+      <div className="navlists flex justify-between items-center min-w-[75%] text-[var(--col5)] ">
         <div className="">
           <NavLink
             to="/"
@@ -102,7 +102,7 @@ export default function Header({ setAddress }) {
         </div>
         <div className=" hover:text-[#fff] flex items-center">
           <div
-            className="cursor-pointer p-[.3rem] w-[30px] h-[30px] info mr-[.3rem]"
+            className="cursor-pointer p-[.1rem] w-[20px] h-[20px] info mr-[.3rem]"
             onClick={() => setAddress((a) => !a)}
           >
             <i className="fa-solid fa-info text-[1rem] text-[var(--col3)]"></i>

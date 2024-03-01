@@ -1,12 +1,12 @@
 .carousel {
   
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   z-index: 0;
   /* padding-top: 3.5rem; */
 }
 .carouselM {
-  height: 70vh;
+  height: 60vh;
 }
 @media (min-width: 679px) {
   .carouselM {
@@ -18,10 +18,10 @@
     display: none;
   }
   .slides {
-    height: 70vh !important;
+    height: 60vh !important;
   }
   .slides-inner {
-    height: 70vh !important;
+    height: 60vh !important;
   }
   .slides-inner h2 {
     font-size: 1.8rem !important;
@@ -37,7 +37,7 @@
 }
 .slides {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -72,7 +72,7 @@
 .slides-inner {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   padding: 0 0.75rem;
   color: var(--col1);
   font-size: 1.75rem;

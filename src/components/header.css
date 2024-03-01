@@ -31,6 +31,8 @@
 
 .navlists > div {
   position: relative;
+  margin-left: .4rem;
+  margin-right: .4rem;
 }
 .navlists > div:hover {
   color: var(--col4);

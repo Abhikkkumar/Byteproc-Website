@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/blue-logo.png";
 export default function Footer() {
   return (
-    <div className="flex flex-wrap justify-between px-[3%]  py-[4%] bg-[var(--col5)] text-[var(--col1)] ">
+    <div className="flex flex-wrap justify-between px-[3%]  py-[4%] bg-[#1e294b] text-[var(--col1)] ">
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full">
         <img className="w-[180px] sm:w-3/4 mb-[1%]" src={logo} alt="" />
         <p className="max-w-[300px]">
@@ -16,7 +16,6 @@ export default function Footer() {
           <a href="#" target="_blank" className="pr-[.3rem] text-[1.4rem]">
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          
         </div>
       </div>
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full flex flex-col">
@@ -47,12 +46,14 @@ export default function Footer() {
             Daman Industrial Estate, Daman - 396210
           </p>
         </p>
-        <a className="ml-[20px]" href="tel:+91-8320844583">
-          +91-8320844583
-        </a>
-        <a className="ml-[20px]" href="mainto:info@vamadronestores.com">
-          info@vamadronestores.com
-        </a>
+        <p>
+          <i class="fa-solid fa-tty"></i>{" "}
+          <a href="tel:+91-7368804237">+91-7368804237</a>
+        </p>
+        <p>
+          <i class="fa-regular fa-envelope"></i>{" "}
+          <a href="mailto:info@easywebes.com">info@easywebes.com</a>
+        </p>
       </div>
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full flex flex-col">
         <h2 className="uppercase mb-[1%] text-[1.4rem] font-[500]">

@@ -11,23 +11,22 @@ import BusinessPartnerCarousel from "./BusinessPartnerCarousel";
 import Parallex from "../Parallex";
 import ProjectCarousel from "./ProjectCarousel";
 
-
 export default function Home() {
   return (
     <div className="home pt-[3.5rem]">
-        <Carousel/>
-        <CarouselM/>
-        <Explore/>
-        <About/>
-        <Section3/>
-        <Services/>
-        <ProjectCarousel />
-        <Parallex/>
-        <Help/>
-        <Section4/>
-        <BusinessPartnerCarousel />
-        
-      
+      <Carousel />
+      <CarouselM />
+      <Explore />
+      <About />
+      <Section3 />
+
+      <Services />
+      <Section4 />
+      <ProjectCarousel />
+      <Parallex />
+      <Help />
+
+      <BusinessPartnerCarousel />
     </div>
-  )
+  );
 }
