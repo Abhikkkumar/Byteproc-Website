@@ -31,6 +31,7 @@ export default function Sidebar({ side, setSide }) {
           onClick={() => {
             navigate("/");
             setSide(false);
+            
           }}
         >
           <p className="">
@@ -42,6 +43,7 @@ export default function Sidebar({ side, setSide }) {
           onClick={() => {
             navigate("/about-us");
             setSide(false);
+            
           }}
         >
           <p className="">
