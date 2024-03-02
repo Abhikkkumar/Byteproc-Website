@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import generateLink from "./GenerateLink";
 
 export default function DropdownT({ arr }) {
   return (
@@ -6,7 +7,7 @@ export default function DropdownT({ arr }) {
       {arr.map((item, i) => (
         <NavLink
           className="uppercase px-5 py-3 hover:bg-[var(--col3)] hover:text-[var(--col1)] transition ease-in-out delay-[.1s] "
-          to="/"
+          to={generateLink(item)}
           key={i}
         >
           {item}

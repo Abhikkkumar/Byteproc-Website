@@ -19,7 +19,8 @@ export default function Header({ setAddress }) {
     "API Development",
     "Digital Marketing",
   ];
-  const careerList = ["Full-Time Role", "Internship ", "Workshops"];
+
+  const careerList = ["Full-Time Role", "Internships", "Workshops"];
   const [services, showServices] = useState(false);
   const [career, showCareer] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
