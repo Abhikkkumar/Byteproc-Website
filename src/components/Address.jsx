@@ -11,79 +11,63 @@ export default function Address({ address, setAddress }) {
       classNames="fade"
       unmountOnExit={true}
     >
-      <div className={address ? "address" : "address hide-right "}>
-        <i
-          className="fa-solid fa-xmark hover:cursor-pointer"
-          onClick={() => setAddress(!address)}
-        ></i>
-        <img src={logo} alt="" className="max-w-[200px]" />
-        <p className="my-[.5rem] leading-tight">
-          We Design Super Engaging Web Experiences To Help You Go From More
-          Leads To Customers Faster through Easywebes.
-        </p>
-        <div>
+      <div className="address-cnt " onClick={() => setAddress(!address)}>
+        <div className="address" onClick={(event) => event.stopPropagation()}>
+          <i
+            className="fa-solid fa-xmark hover:cursor-pointer"
+            onClick={() => setAddress(!address)}
+          ></i>
+          <img src={logo} alt="" className="max-w-[200px]" />
+          <p className="my-[.5rem] leading-tight">
+            We Design Super Engaging Web Experiences To Help You Go From More
+            Leads To Customers Faster through Easywebes.
+          </p>
+          <div>
+            <div className="dual-line p-[0] my-[1.45rem]">
+              <div className="line1 "></div>
+              <h2>Contact Info </h2>
+              <div className="line1 "></div>
+            </div>
+            <p className="flex items-start">
+              <i class="fa-solid fa-location-dot"></i>{" "}
+              <p className="mt-[-7px] ml-[5px]">
+                Contact Info Balua Chowk Motihari, Bihar
+              </p>
+            </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>{" "}
+              <a href="mailto:info@easywebes.com">info@easywebes.com</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-tty"></i>{" "}
+              <a href="tel:+91-7368804237">+91-7368804237</a>
+            </p>
+          </div>
+
           <div className="dual-line p-[0] my-[1.45rem]">
             <div className="line1 "></div>
-            <h2>Contact Info </h2>
+            <h2>Our Branches </h2>
             <div className="line1 "></div>
           </div>
-          <p className="flex items-start">
-            <i class="fa-solid fa-location-dot"></i>{" "}
-            <p className="mt-[-7px] ml-[5px]">
-              Contact Info Balua Chowk Motihari, Bihar
-            </p>
-          </p>
-          <p>
-            <i class="fa-regular fa-envelope"></i>{" "}
-            <a href="mailto:info@easywebes.com">info@easywebes.com</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-tty"></i>{" "}
-            <a href="tel:+91-7368804237">+91-7368804237</a>
-          </p>
-        </div>
 
-        <div className="dual-line p-[0] my-[1.45rem]">
-          <div className="line1 "></div>
-          <h2>Our Branches </h2>
-          <div className="line1 "></div>
-        </div>
-
-        <div>
-          <p>Banglore</p>
-          {/* <p>Lorem ipsum dolor sit amet.</p>
+          <div>
+            <p>Banglore</p>
+            {/* <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet.</p> */}
+          </div>
+          <div>
+            <p>Odisha</p>
+          </div>
+          <div>
+            <p>Patna</p>
+          </div>
+          <div>
+            <p>Muzaffarpur</p>
+          </div>
+          <div>
+            <p>Arrah</p>
+          </div>
         </div>
-        <div>
-          <p>Odisha</p>
-          {/* <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p> */}
-        </div>
-        <div>
-          <p>Patna</p>
-          {/* <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p> */}
-        </div>
-        <div>
-          <p>Muzaffarpur</p>
-          {/* <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p> */}
-        </div>
-        <div>
-          <p>Arrah</p>
-          {/* <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p> */}
-        </div>
-        {/* <div>
-          <p>ONe</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>ONe</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div> */}
       </div>
     </CSSTransition>
   );

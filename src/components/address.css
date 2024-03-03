@@ -1,4 +1,15 @@
-
+.address-cnt{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(69, 96, 175, 0.3);
+    z-index: 5;
+}
+.hide-right{
+    transform: translateX(100%);
+}
 .address{
     position: fixed;
     top:0;
