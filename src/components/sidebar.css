@@ -5,7 +5,6 @@
 }
 .sidebar {
   z-index: 1;
-  
 }
 
 .sidelist {
@@ -18,8 +17,11 @@
   transition: all 0.3s ease;
   z-index: inherit;
 }
-.sidelist>div:hover{
+.sidelist > div:hover {
   cursor: pointer;
+}
+.sidelist p {
+  color: var(--col3);
 }
 .sidelist-hide {
   transform: translateX(-100%);
