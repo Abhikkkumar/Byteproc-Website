@@ -8,7 +8,7 @@ export default function FullTimeRole() {
   const propbread = {
     title: "Full Time Role",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat.",
-    arr: ["Home", "Full Time Role"],
+    arr: ["Home", "Services", "Full Time Role"],
   };
 
   const props = {
@@ -53,7 +53,7 @@ export default function FullTimeRole() {
                   placeholder="Your Position"
                 /> */}
                 <div className="flex w-[95%] my-[.4rem] mx-auto">
-                  <label for="position" className="w-fit p-[.7rem] text-[1rem]" >
+                  <label for="position" className="w-fit p-[.7rem] text-[1rem]">
                     Select your field:
                   </label>
                   <select name="field" id="position" className="">
