@@ -25,9 +25,6 @@
   border-radius: 50%;
 }
 
-.help-top img {
-  width: 50%;
-}
 
 .help-img:hover {
   background-color: var(--col5);

@@ -6,7 +6,7 @@ import { useState } from "react";
 import "./header.css";
 import { useEffect } from "react";
 import about from "../assets/header/about-us.png";
-import career from "../assets/header/career.png";
+import career1 from "../assets/header/career.png";
 import home from "../assets/header/home.png";
 import services1 from "../assets/header/s.png";
 import { services as servicesList, careerList } from "./Data";
@@ -103,7 +103,7 @@ export default function Header({ setAddress }) {
           >
             <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
             <img
-              src={career}
+              src={career1}
               className="fa-regular  text-[var(--col4)] w-[1rem]"
             ></img>
             Career

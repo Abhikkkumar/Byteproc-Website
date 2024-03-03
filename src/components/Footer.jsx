@@ -20,21 +20,22 @@ export default function Footer() {
       </div>
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full flex flex-col">
         <h2 className="uppercase mb-[1%] text-[1.4rem] font-[500]">
-          Our Services
+          Important Links
         </h2>
-        <Link to="/" className="uppercase w-fit hover:text-[var(--col2)]">
-          <i className="fa-solid fa-angle-right"></i> Home
-        </Link>
-        <Link to="/" className="uppercase w-fit hover:text-[var(--col2)]">
+        
+        <Link to="/about-us" className="uppercase w-fit hover:text-[var(--col2)]">
           <i className="fa-solid fa-angle-right"></i> About Us
         </Link>
-        <Link to="/" className="uppercase w-fit hover:text-[var(--col2)]">
-          <i className="fa-solid fa-angle-right"></i> Support & Services
+        <Link to="/full-time-role" className="uppercase w-fit hover:text-[var(--col2)]">
+          <i className="fa-solid fa-angle-right"></i> Full-Time Role
         </Link>
-        <Link to="/" className="uppercase w-fit hover:text-[var(--col2)]">
-          <i className="fa-solid fa-angle-right"></i> Products
+        <Link to="https://intern.byteproc.com/" className="uppercase w-fit hover:text-[var(--col2)]">
+          <i className="fa-solid fa-angle-right"></i> Internships
         </Link>
-        <Link to="/" className="uppercase w-fit hover:text-[var(--col2)]">
+        <Link to="/full-time-role" className="uppercase w-fit hover:text-[var(--col2)]">
+          <i className="fa-solid fa-angle-right"></i> Workshops
+        </Link>
+        <Link to="/contact" className="uppercase w-fit hover:text-[var(--col2)]">
           <i className="fa-solid fa-angle-right"></i> Contact us
         </Link>
       </div>

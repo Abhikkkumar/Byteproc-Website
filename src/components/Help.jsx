@@ -1,6 +1,6 @@
 import React from "react";
 import "./help.css";
-import Img1 from "../assets/trusted-source-icon.png";
+import Img1 from "../assets/chat-icon.png";
 // import img2 from "../assets/mob-slider3.png";
 // import img2 from "../assets/Byteproc-about3.jpg";
 import img3 from "../assets/section-title-shape.png";
@@ -18,7 +18,7 @@ export default function Help() {
 
         <div className="help-top-2">
           <p>Have any question?</p>
-          <p>Call: +91-7368804237</p>
+          <a href="tel:+91-7368804237">Call: +91-7368804237</a>
         </div>
       </div>
 
