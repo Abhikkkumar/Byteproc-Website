@@ -16,8 +16,8 @@ export default function Sidebar({ side, setSide }) {
     if (side) {
       setSideBottom(true);
       const timeout = setTimeout(() => {
-        setSideBottom2(true);
         setSideBottom(false);
+        setSideBottom2(true);
       }, 300);
       return () => clearTimeout(timeout);
     }
@@ -117,7 +117,6 @@ export default function Sidebar({ side, setSide }) {
             <p className=" py-[.75rem]">Products 1</p>
           </div>
         </CSSTransition>
-
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
           onClick={() => {
@@ -131,7 +130,7 @@ export default function Sidebar({ side, setSide }) {
           </p>
         </div>
         {sideBottom2 && (
-          <div className=" w-[100%] text-center mt-[10.3rem] sidebottom2">
+          <div className=" w-[100%] text-center mt-[10.27rem] sidebottom2">
             <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">
               Get Free Consultation
             </button>

@@ -8,16 +8,17 @@ export default function MVV() {
   const [value, setValue] = useState(false);
 
   return (
-    <div className="mvv flex items-center justify-around flex-wrap-reverse">
-      <div className="w-[45%] p-[1rem]">
-        <img src={img1} alt="" className="w-full" />
-      </div>
-      <div className="w-[45%] py-[1.5rem] ">
+    <div className="mvv flex items-center justify-around flex-wrap">
+      <div className="w-[45%] py-[1.5rem] px-[1rem]">
         <p className="text-[var(--col3)]">About Our Company</p>
         <h1>Byteproc Solution Pvt. Ltd.</h1>
         <div>
           <button
-            className={mission?"mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]":"border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"}
+            className={
+              mission
+                ? "mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"
+                : "border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"
+            }
             onClick={() => {
               setMission(true);
               setVision(false);
@@ -27,7 +28,11 @@ export default function MVV() {
             Mission
           </button>
           <button
-            className={vision?"mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)] mx-[.7rem]":"border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)] mx-[.7rem]"}
+            className={
+              vision
+                ? "mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)] mx-[.7rem]"
+                : "border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)] mx-[.7rem]"
+            }
             onClick={() => {
               setMission(false);
               setVision(true);
@@ -37,7 +42,11 @@ export default function MVV() {
             Vision
           </button>
           <button
-            className={value?"mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]":"border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"}
+            className={
+              value
+                ? "mvv-active border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"
+                : "border border-solid border-[var(--col3)] px-[.75rem] py-[.4rem] rounded hover:bg-[var(--col3)] hover:text-[var(--col1)]"
+            }
             onClick={() => {
               setMission(false);
               setVision(false);
@@ -116,6 +125,9 @@ export default function MVV() {
         <button className="border border-solid bg-[var(--col3)] text-[var(--col1)] px-[.75rem] py-[.5rem] hover:bg-[var(--col4)] mt-[.5rem]">
           View Details
         </button>
+      </div>
+      <div className="w-[45%] p-[1rem]">
+        <img src={img1} alt="" className="w-full" />
       </div>
     </div>
   );

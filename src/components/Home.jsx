@@ -19,7 +19,6 @@ export default function Home() {
       <Explore />
       <About />
       <Section3 />
-
       <Services />
       <Section4 />
       <ProjectCarousel />
