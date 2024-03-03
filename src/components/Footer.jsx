@@ -16,7 +16,6 @@ export default function Footer() {
           <a href="#" target="_blank" className="pr-[.3rem] text-[1.4rem]">
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          
         </div>
       </div>
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full flex flex-col">
@@ -44,7 +43,7 @@ export default function Footer() {
         <p className="flex items-start">
           <i className="fa-solid fa-location-dot mt-[7px]"></i>
           <p className="max-w-[200px] ml-[8px] ">
-            Daman Industrial Estate, Daman - 396210
+            Raja Bazar, Motihari Bihar, 845401, IN
           </p>
         </p>
         <p>

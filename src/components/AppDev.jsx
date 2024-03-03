@@ -1,9 +1,11 @@
 import React from 'react'
+import ServiceTemp from './ServiceTemp'
+import { AppProp } from './Data'
 
 export default function AppDev() {
   return (
     <div className='pt-[5rem]'>
-     App Development
+      <ServiceTemp props={AppProp}/>
     </div>
   )
 }

@@ -9,17 +9,12 @@ import about from "../assets/header/about-us.png";
 import career from "../assets/header/career.png";
 import home from "../assets/header/home.png";
 import services1 from "../assets/header/s.png";
+import { services as servicesList } from "./Data";
 
 export default function Header({ setAddress }) {
   const navigate = useNavigate();
-  const servicesList = [
-    "Website Development",
-    "Software Development",
-    "App development",
-    "API Development",
-    "Digital Marketing",
-  ];
 
+  // const servicesList = services;
   const careerList = ["Full-Time Role", "Internships", "Workshops"];
   const [services, showServices] = useState(false);
   const [career, showCareer] = useState(false);
@@ -102,7 +97,10 @@ export default function Header({ setAddress }) {
           onMouseEnter={() => showCareer(true)}
           onMouseLeave={() => showCareer(false)}
         >
-          <NavLink to="/career" className="uppercase below w-max below px-[.5rem]">
+          <NavLink
+            to="/career"
+            className="uppercase below w-max below px-[.5rem]"
+          >
             <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
             <img
               src={career}

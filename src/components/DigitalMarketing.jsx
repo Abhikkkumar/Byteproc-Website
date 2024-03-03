@@ -1,9 +1,11 @@
 import React from 'react'
+import ServiceTemp from './ServiceTemp'
+import { DigitalProp } from './Data'
 
 export default function DigitalMarketing() {
   return (
     <div className='pt-[5rem]'>
-      Digital Marketing
+      <ServiceTemp props={DigitalProp}/>
     </div>
   )
 }

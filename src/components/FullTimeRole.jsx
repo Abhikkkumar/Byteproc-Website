@@ -1,108 +1,109 @@
-import React from 'react'
-import './FullTimeRole.css'
-import BreadrCump from './BreadCrump'
-import RoleImg from '../assets/byteproc parallex.png'
-import Section4 from './Section4'
+import React from "react";
+import "./FullTimeRole.css";
+import BreadrCump from "./BreadCrump";
+import RoleImg from "../assets/byteproc parallex.png";
+import Section4 from "./Section4";
 
 export default function FullTimeRole() {
-    const propbread = {
-        title:"Full Time Role",
-        text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat.",
-        arr:["Home","Full Time Role"]
-      }
+  const propbread = {
+    title: "Full Time Role",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat.",
+    arr: ["Home", "Full Time Role"],
+  };
 
-      const props = {
-        img: "s4.jpg",
-        title: "Career",
-        text1:
-          "Join our nationally recognized, award winning team! Incredible opportunities available now. Competitive salary and benefits available. Most rewarding job in the country! Apply now!",
-      };
+  const props = {
+    img: "s4.jpg",
+    title: "Career",
+    text1:
+      "Join our nationally recognized, award winning team! Incredible opportunities available now. Competitive salary and benefits available. Most rewarding job in the country! Apply now!",
+  };
   return (
-    <div className='pt-[5rem]'>
-        
+    <div className="pt-[5rem]">
       <div>
-      <BreadrCump bprops={propbread}/>
-      <div className="all-section-p">
-        <div className="asp-left">
-          <div className="prod-img">
-            <img src={RoleImg} alt="" className="carrier-image" />
-            <form className="carrier-form">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-              />
-              <input
-                type="Email"
-                id="Email"
-                name="email"
-                placeholder="Your Email"
-              />
+        <BreadrCump bprops={propbread} />
+        <div className="all-section-p">
+          <div className="asp-left">
+            <div className="prod-img">
+              <img src={RoleImg} alt="" className="carrier-image" />
+              <form className="carrier-form">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                />
+                <input
+                  type="Email"
+                  id="Email"
+                  name="email"
+                  placeholder="Your Email"
+                />
 
-              <input
-                type="Phone Number"
-                id="Phone Number"
-                name="number"
-                placeholder="Your Phone Number"
-              />
+                <input
+                  type="Phone Number"
+                  id="Phone Number"
+                  name="number"
+                  placeholder="Your Phone Number"
+                />
 
-              <input
-                type="Position"
-                id="Position"
-                name="position"
-                placeholder="Your Position"
-              />
+                <input
+                  type="Position"
+                  id="Position"
+                  name="position"
+                  placeholder="Your Position"
+                />
 
-              <div className="carrier-file">
-                <label for="myfile" className="custom-file-upload"><i className="fa fa-cloud-upload"></i> Upload Resume</label>
-                <input type="file" id="myfile" name="myfile" />
-              </div>
+                <div className="carrier-file">
+                  <label for="myfile" className="custom-file-upload">
+                    <i className="fa fa-cloud-upload"></i> Upload Resume
+                  </label>
+                  <input type="file" id="myfile" name="myfile" />
+                </div>
 
-              <button type="submit">Submit Now</button>
-            </form>
+                <button type="submit">Submit Now</button>
+              </form>
+            </div>
+            <div className="sec2-prod-left">
+              <h1>{props.title}</h1>
+              <p>{props.text1}</p>
+            </div>
           </div>
-          <div className="sec2-prod-left">
-            <h1>{props.title}</h1>
-            <p>{props.text1}</p>
-          </div>
-        </div>
-        <div className="asp-right">
-          <div className="asp-right-2">
-            <div className="sec2-prod-right">
-              <div className="sec2-prod-right-inner">
-                <span className="tele-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </span>
-                <div>
-                  <p>Have you any Questions?</p>
-                  <p>
-                    Call us <span className="ylo">Today!</span>
+          <div className="asp-right">
+            <div className="asp-right-2">
+              <div className="sec2-prod-right">
+                <div className="sec2-prod-right-inner">
+                  <span className="tele-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <div>
+                    <p>Have you any Questions?</p>
+                    <p>
+                      Call us <span className="ylo">Today!</span>
+                    </p>
+                  </div>
+                  <div className="dotted-line"></div>
+                  <p className="call-num">
+                    <a href="tel:+91-8320844583">+91-8320844583</a>
                   </p>
                 </div>
-                <div className="dotted-line"></div>
-                <p className="call-num">
-                  <a href="tel:+91-8320844583">+91-8320844583</a>
-                </p>
               </div>
-            </div>
-            <div className="sec3-p-right">
-              <h2>Brochure</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Exercitationem sit ipsa qui commodi numquam.
-              </p>
-              <div className="s3p-btn-cnt ">
-                <button className='bg-[#e97f23]'>Download</button>
-                <span className='bg-[#fff]'>Or</span>
-                <button className='bg-[var(--col3)]'>Discover</button>
+              <div className="sec3-p-right">
+                <h1>Brochure</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Exercitationem sit ipsa qui commodi numquam.
+                </p>
+                <div className="s3p-btn-cnt ">
+                  <button className="bg-[#e97f23]">Download</button>
+                  <span className="bg-[#fff]">Or</span>
+                  <button className="bg-[var(--col3)]">Discover</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <Section4 />
-      {/* <div className="faqs  shadow">
+        <Section4 />
+        {/* <div className="faqs  shadow">
         <h2>Frequently Asked Questions </h2>
         <p>
           We have compiled answers of commonly asked questions regarding Remote
@@ -163,7 +164,7 @@ export default function FullTimeRole() {
           </div>
         </div>
       </div> */}
+      </div>
     </div>
-    </div>
-  )
+  );
 }

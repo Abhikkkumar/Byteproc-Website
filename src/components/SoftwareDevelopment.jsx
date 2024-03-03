@@ -1,9 +1,11 @@
 import React from 'react'
+import ServiceTemp from './ServiceTemp'
+import { SoftwareProp } from './Data'
 
 export default function SoftwareDevelopment() {
   return (
     <div className='pt-[5rem]'>
-      Software Development
+      <ServiceTemp props={SoftwareProp}/>
     </div>
   )
 }
