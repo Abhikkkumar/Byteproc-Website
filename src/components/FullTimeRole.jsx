@@ -8,7 +8,7 @@ export default function FullTimeRole() {
   const propbread = {
     title: "Full Time Role",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat.",
-    arr: ["Home", "Services", "Full Time Role"],
+    arr: ["Home", "Career", "Full Time Role"],
   };
 
   const props = {

@@ -26,36 +26,33 @@ export default function Carousel() {
             <div className="slides-inner">
               {" "}
               <div className="slides-text">
-                <h1>Slide1</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, architecto?
-                </p>
-                <button >click me</button>
+                <p className="text-[2rem]">Delivering Excellence in </p>
+                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
+                <button>
+                  Discover More
+                </button>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s2">
             <div className="slides-inner">
               <div className="slides-text">
-                <h1>Slide1</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, architecto?
-                </p>
-                <button >click me</button>
+              <p className="text-[2rem]">Delivering Excellence in </p>
+                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
+                <button>
+                  Discover More
+                </button>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s3">
             <div className="slides-inner">
               <div className="slides-text">
-                <h1>Slide1</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Minima, architecto?
-                </p>
-                <button >click me</button>
+              <p className="text-[2rem]">Delivering Excellence in </p>
+                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
+                <button>
+                  Discover More
+                </button>
               </div>
             </div>
           </SwiperSlide>

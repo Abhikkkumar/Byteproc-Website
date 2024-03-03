@@ -109,9 +109,9 @@
 
 
 .slides-text p {
-  font-weight: 400;
-  font-size: 1.3rem;
-  margin: 0.85rem 0;
+  /* font-weight: 400; */
+  /* font-size: 1.3rem; */
+  /* margin: 0.85rem 0; */
   animation: anim1 2s ease-in 0.1s 1;
 }
 .slides-text > button,.m-slides-text > button {
