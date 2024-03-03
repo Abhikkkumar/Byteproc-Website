@@ -59,7 +59,6 @@ export default function Sidebar({ side, setSide }) {
             Us
           </p>
         </div>
-
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
           onClick={() => manageState("services")}
@@ -70,34 +69,31 @@ export default function Sidebar({ side, setSide }) {
           </p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
-        {!prod ? (
-          <CSSTransition
-            in={service}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit={true}
-          >
-            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-              {services.map((service, i) => {
-                return (
-                  <p
-                    key={i}
-                    className=" py-[.75rem]"
-                    onClick={() => {
-                      // console.log(generateLink(service));
-                      navigate(generateLink(service));
-                      setSide(false);
-                    }}
-                  >
-                    {service}
-                  </p>
-                );
-              })}
-            </div>
-          </CSSTransition>
-        ) : (
-          ""
-        )}
+
+        <CSSTransition
+          in={service}
+          timeout={300}
+          classNames="fade"
+          unmountOnExit={true}
+        >
+          <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+            {services.map((service, i) => {
+              return (
+                <p
+                  key={i}
+                  className=" py-[.75rem]"
+                  onClick={() => {
+                    // console.log(generateLink(service));
+                    navigate(generateLink(service));
+                    setSide(false);
+                  }}
+                >
+                  {service}
+                </p>
+              );
+            })}
+          </div>
+        </CSSTransition>
 
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
@@ -109,21 +105,19 @@ export default function Sidebar({ side, setSide }) {
           </p>
           <i className="fa-solid fa-chevron-down"></i>
         </div>
-        {!service ? (
-          <CSSTransition
-            in={prod}
-            timeout={300}
-            classNames="fade"
-            unmountOnExit={true}
-          >
-            <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-              <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
-            </div>
-          </CSSTransition>
-        ) : (
-          ""
-        )}
+
+        <CSSTransition
+          in={prod}
+          timeout={300}
+          classNames="fade"
+          unmountOnExit={true}
+        >
+          <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
+            <p className=" py-[.75rem]">Products 1</p>
+            <p className=" py-[.75rem]">Products 1</p>
+          </div>
+        </CSSTransition>
+
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
           onClick={() => {
