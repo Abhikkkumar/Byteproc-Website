@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./sidebar.css";
 import { CSSTransition } from "react-transition-group";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,19 @@ export default function Sidebar({ side, setSide }) {
   const navigate = useNavigate();
   const [service, setService] = useState(false);
   const [prod, setProd] = useState(false);
+  const [sideBottom2, setSideBottom2] = useState(false);
+  const [sideBottom, setSideBottom] = useState(false);
+  useEffect(() => {
+    // Show the element after .3s when 'side' becomes true
+    if (side) {
+      setSideBottom(true);
+      const timeout = setTimeout(() => {
+        setSideBottom2(true);
+        setSideBottom(false);
+      }, 300);
+      return () => clearTimeout(timeout);
+    }
+  }, [side]);
 
   const manageState = (elem) => {
     if (elem == "prod") {
@@ -19,12 +32,7 @@ export default function Sidebar({ side, setSide }) {
       setService((a) => !a);
     }
   };
-  let navbottomClass = {};
-  if (service || prod) {
-    navbottomClass = "sidebottom w-[100%] text-center top-[85vh] ";
-  } else {
-    navbottomClass = "sidebottom w-[100%] text-center top-[70vh]";
-  }
+
   return (
     <div className="sidebar">
       <div className={side ? "sidelist " : "sidelist sidelist-hide"}>
@@ -128,21 +136,31 @@ export default function Sidebar({ side, setSide }) {
             <i class="fa-solid fa-address-card"></i> Career
           </p>
         </div>
+        {sideBottom2 && (
+          <div className=" w-[100%] text-center mt-[10.3rem] sidebottom2">
+            <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">
+              Get Free Consultation
+            </button>
+            <button className="w-[95%] py-[.5rem] border-[1px] border-[var(--col4)] rounded mb-[3%]">
+              Login
+            </button>
+            <p className="text-[var(--col4)] font-[500]">+91-9999966666</p>
+            <p>Only for demo and sales enquiry</p>
+          </div>
+        )}
       </div>
-      <div
-        className={
-          side ? navbottomClass : "sidebottom hide w-[100%] text-center"
-        }
-      >
-        <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">
-          Get Free Consultation
-        </button>
-        <button className="w-[95%] py-[.5rem] border-[1px] border-[var(--col4)] rounded mb-[3%]">
-          Login
-        </button>
-        <p className="text-[var(--col4)] font-[500]">+91-9999966666</p>
-        <p>Only for demo and sales enquiry</p>
-      </div>
+      {sideBottom && (
+        <div className="sidebottom w-[100%] text-center">
+          <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">
+            Get Free Consultation
+          </button>
+          <button className="w-[95%] py-[.5rem] border-[1px] border-[var(--col4)] rounded mb-[3%]">
+            Login
+          </button>
+          <p className="text-[var(--col4)] font-[500]">+91-9999966666</p>
+          <p>Only for demo and sales enquiry</p>
+        </div>
+      )}
     </div>
   );
 }

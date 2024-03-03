@@ -16,6 +16,7 @@
   border-top: 1px solid #aaa;
   transition: all 0.3s ease;
   z-index: inherit;
+  overflow-y: auto;
 }
 .sidelist > div:hover {
   cursor: pointer;
@@ -28,10 +29,12 @@
 }
 .sidebottom {
   position: fixed;
-  transition: all 0.05s ease;
+  top:75%;
   z-index: 1;
-  /* background-color: rgba(255, 255, 255, 0.1); */
 }
-.hide {
+
+
+/* .hide {
   display: none;
-}
+} */
+
