@@ -9,13 +9,13 @@ import about from "../assets/header/about-us.png";
 import career from "../assets/header/career.png";
 import home from "../assets/header/home.png";
 import services1 from "../assets/header/s.png";
-import { services as servicesList } from "./Data";
+import { services as servicesList, careerList } from "./Data";
 
 export default function Header({ setAddress }) {
   const navigate = useNavigate();
 
   // const servicesList = services;
-  const careerList = ["Full-Time Role", "Internships", "Workshops"];
+  
   const [services, showServices] = useState(false);
   const [career, showCareer] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

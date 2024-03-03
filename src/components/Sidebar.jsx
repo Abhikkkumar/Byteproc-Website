@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./sidebar.css";
 import { CSSTransition } from "react-transition-group";
 import { useNavigate } from "react-router-dom";
+import generateLink from "./GenerateLink";
+import { services, careerList } from "./Data";
 
 export default function Sidebar({ side, setSide }) {
   const navigate = useNavigate();
@@ -31,7 +33,6 @@ export default function Sidebar({ side, setSide }) {
           onClick={() => {
             navigate("/");
             setSide(false);
-            
           }}
         >
           <p className="">
@@ -43,7 +44,6 @@ export default function Sidebar({ side, setSide }) {
           onClick={() => {
             navigate("/about-us");
             setSide(false);
-            
           }}
         >
           <p className="">
@@ -70,9 +70,21 @@ export default function Sidebar({ side, setSide }) {
             unmountOnExit={true}
           >
             <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-              <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
+              {services.map((service, i) => {
+                return (
+                  <p
+                    key={i}
+                    className=" py-[.75rem]"
+                    onClick={() => {
+                      // console.log(generateLink(service));
+                      navigate(generateLink(service));
+                      setSide(false);
+                    }}
+                  >
+                    {service}
+                  </p>
+                );
+              })}
             </div>
           </CSSTransition>
         ) : (
@@ -99,13 +111,18 @@ export default function Sidebar({ side, setSide }) {
             <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
               <p className=" py-[.75rem]">Products 1</p>
               <p className=" py-[.75rem]">Products 1</p>
-              <p className=" py-[.75rem]">Products 1</p>
             </div>
           </CSSTransition>
         ) : (
           ""
         )}
-        <div className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]">
+        <div
+          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+          onClick={() => {
+            navigate("/about-us");
+            setSide(false);
+          }}
+        >
           <p className="">
             {" "}
             <i class="fa-solid fa-address-card"></i> Career

@@ -8,6 +8,8 @@ export const services = [
 
 export const products = [];
 
+export const careerList = ["Full-Time Role", "Internships", "Workshops"];
+
 const websiteBreadProp = {
   title: "Website Development",
   text: "",
