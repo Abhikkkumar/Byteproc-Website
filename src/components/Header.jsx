@@ -5,10 +5,10 @@ import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
 import "./header.css";
 import { useEffect } from "react";
-import about from "../assets/header/about-us.png";
-import career1 from "../assets/header/career.png";
+import about from "../assets/header/info.png";
+import career1 from "../assets/header/briefcase.png";
 import home from "../assets/header/home.png";
-import services1 from "../assets/header/s.png";
+import services1 from "../assets/header/stack.png";
 import { services as servicesList, careerList } from "./Data";
 
 export default function Header({ setAddress }) {
@@ -57,7 +57,7 @@ export default function Header({ setAddress }) {
             <i className="fa-solid fa-house text-[var(--col4)]"></i>
             <img
               src={home}
-              className="fa-regular fa-house text-[var(--col4)] w-[1rem]"
+              className="fa-regular fa-house text-[var(--col4)] w-[1.1rem]"
             ></img>
             Home
           </NavLink>
@@ -67,7 +67,7 @@ export default function Header({ setAddress }) {
             <i className="fa-solid fa-circle-info text-[var(--col4)]"></i>
             <img
               src={about}
-              className="fa-regular fa-circle-info text-[var(--col4)] w-[1rem]"
+              className="fa-regular fa-circle-info text-[var(--col4)] w-[1.13rem]"
             ></img>
             About Us
           </NavLink>
@@ -79,7 +79,7 @@ export default function Header({ setAddress }) {
         >
           <NavLink to="/services" className="uppercase below px-[.5rem]">
             <i className="fa-solid fa-layer-group text-[var(--col4)]"></i>
-            <img src={services1} className="fa-regular   w-[1rem]" />
+            <img src={services1} className="fa-regular   w-[1.1rem]" />
             <p className="flex items-center">Services </p>
           </NavLink>
           <i className="fa-solid fa-chevron-down ml-[5px] mb-[5px] mr-[3px]"></i>
@@ -104,7 +104,7 @@ export default function Header({ setAddress }) {
             <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
             <img
               src={career1}
-              className="fa-regular  text-[var(--col4)] w-[1rem]"
+              className="fa-regular  text-[var(--col4)] w-[1.13rem]"
             ></img>
             Career
           </NavLink>

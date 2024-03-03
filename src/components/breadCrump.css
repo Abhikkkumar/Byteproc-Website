@@ -17,7 +17,7 @@
 
 .horizontal-line {
   width: 2rem;
-  border: 2px solid var(--brand-color);
+  border: 2px solid var(--col1);
 }
 
 .bread-inner > p {
