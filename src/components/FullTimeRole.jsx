@@ -46,12 +46,25 @@ export default function FullTimeRole() {
                   placeholder="Your Phone Number"
                 />
 
-                <input
+                {/* <input
                   type="Position"
                   id="Position"
                   name="position"
                   placeholder="Your Position"
-                />
+                /> */}
+                <div className="flex w-[95%] my-[.4rem] mx-auto">
+                  <label for="position" className="w-fit p-[.7rem] text-[1rem]" >
+                    Select your field:
+                  </label>
+                  <select name="field" id="position" className="">
+                    <option value="Web Development">Web Development</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Software Development">
+                      Software Development
+                    </option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                  </select>
+                </div>
 
                 <div className="carrier-file">
                   <label for="myfile" className="custom-file-upload">
