@@ -103,6 +103,7 @@
   }
   .headerMob{
     display: flex;
+    border-bottom: 1px solid #837979;
   }
 }
 @media(min-width:769px){

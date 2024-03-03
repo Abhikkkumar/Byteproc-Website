@@ -4,7 +4,8 @@ import Img1 from "../assets/trusted-source-icon.png";
 // import img2 from "../assets/mob-slider3.png";
 // import img2 from "../assets/Byteproc-about3.jpg";
 import img3 from "../assets/section-title-shape.png";
-import img4 from "../assets/icon.png";
+import img4 from "../assets/Data-protection.png";
+import img5 from "../assets/Optimize-system.png";
 
 export default function Help() {
   return (
@@ -37,14 +38,14 @@ export default function Help() {
 
           <div className="help-sub">
             <div className="help-sub1">
-              <img src={img4} alt="" />
+              <img src={img4} alt="" className="w-[178px]" />
               <h5>Data protection</h5>
               <hr></hr>
               <p>Protect your data as if it is your most valuable asset.</p>
             </div>
 
             <div className="help-sub2">
-              <img src={img4} alt="" />
+              <img src={img5} alt="" className="w-[178px]" />
               <h5>Optimize system</h5>
               <hr></hr>
               <p>We fully focuse on making your software easy to use.</p>

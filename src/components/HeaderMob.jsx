@@ -3,7 +3,7 @@ import logo from "../assets/blue-logo.png";
 
 export default function HeaderMob({ side, setSide, setAddress }) {
   return (
-    <div className="headerMob  justify-between items-center w-[100%] px-[1.5%]">
+    <div className="headerMob  justify-between items-center w-[100%] px-[1.5%] ">
       {!side ? (
         <i
           className="fa-solid fa-bars text-[1rem] text-[var(--col4)] hover:cursor-pointer grid place-self-center "

@@ -21,6 +21,10 @@ export default function Sidebar({ side, setSide }) {
       }, 300);
       return () => clearTimeout(timeout);
     }
+    if (!side) {
+      setService(false);
+      setProd(false);
+    }
   }, [side]);
 
   const manageState = (elem) => {
