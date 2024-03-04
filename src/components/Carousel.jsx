@@ -27,32 +27,32 @@ export default function Carousel() {
               {" "}
               <div className="slides-text">
                 <p className="text-[2rem]">Delivering Excellence in </p>
-                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
-                <button>
-                  Discover More
-                </button>
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                  Every Byte
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s2">
             <div className="slides-inner">
               <div className="slides-text">
-              <p className="text-[2rem]">Delivering Excellence in </p>
-                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
-                <button>
-                  Discover More
-                </button>
+                <p className="text-[2rem]">It Software Solution & </p>
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                Technology
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className="slides s3">
             <div className="slides-inner">
               <div className="slides-text">
-              <p className="text-[2rem]">Delivering Excellence in </p>
-                <p className="font-[700] text-[5rem] my-[.5rem]">Every Byte</p>
-                <button>
-                  Discover More
-                </button>
+                <p className="text-[2rem]">Delivering Excellence in </p>
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                  Every Byte
+                </p>
+                <button>Discover More</button>
               </div>
             </div>
           </SwiperSlide>

@@ -119,10 +119,10 @@ export default function Header({ setAddress }) {
           </CSSTransition>
         </div>
         <div className="">
-          <NavLink to="/product" className="uppercase below px-[.5rem]">
+          <NavLink to="/products" className="uppercase below px-[.5rem]">
             <i className="fa-solid fa-newspaper text-[var(--col4)]"></i>
             <i className="fa-regular fa-newspaper text-[var(--col4)]"></i>
-            Product
+            Products
           </NavLink>
         </div>
         <div className=" hover:text-[#fff] flex items-center">

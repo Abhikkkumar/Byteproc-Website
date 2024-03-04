@@ -101,16 +101,20 @@ export default function Sidebar({ side, setSide }) {
 
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
-          onClick={() => manageState("prod")}
+          // onClick={() => manageState("prod")}
+          onClick={() => {
+            navigate("/products");
+            setSide(false);
+          }}
         >
           <p className="">
             <i className="fa-solid fa-newspaper text-[var(--col4)]"></i>{" "}
             Products
           </p>
-          <i className="fa-solid fa-chevron-down"></i>
+          {/* <i className="fa-solid fa-chevron-down"></i> */}
         </div>
 
-        <CSSTransition
+        {/* <CSSTransition
           in={prod}
           timeout={300}
           classNames="fade"
@@ -120,7 +124,7 @@ export default function Sidebar({ side, setSide }) {
             <p className=" py-[.75rem]">Products 1</p>
             <p className=" py-[.75rem]">Products 1</p>
           </div>
-        </CSSTransition>
+        </CSSTransition> */}
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
           onClick={() => {

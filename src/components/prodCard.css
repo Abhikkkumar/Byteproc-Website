@@ -1,0 +1,59 @@
+.prod-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+}
+.prodCard #prod-img1 {
+  transition: all 0.5s ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+.prodCard:hover #prod-img1 {
+  cursor: pointer;
+  transform: scale(1.05) !important;
+}
+.prodCard .proj-headline {
+  cursor: pointer !important;
+  transition: all 0.5s ease;
+}
+.prodCard:hover .proj-headline {
+  color: var(--col3);
+}
+.prodCard .prod-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(126, 123, 129, 0.1);
+  transition: all 0.5s ease; /* Smooth transition */
+}
+.prodCard:hover .prod-btn {
+  background-color: var(--col3);
+}
+.prodCover1 {
+  position: absolute;
+  top: 0;
+  bottom: 2%;
+  z-index: 3;
+  background-color: rgba(69, 96, 175, 0.2);
+  width: 100%;
+}
+.prodCard:hover .prodCover1 {
+  display: none;
+}
+.prodCover2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(212, 203, 173, 0.2);
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+.prodCard:hover .prodCover2 {
+  transform: translateY(0);
+  cursor: pointer;
+}

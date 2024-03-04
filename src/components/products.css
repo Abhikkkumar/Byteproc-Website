@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .prodlist {
+    flex-direction: column;
+  }
+  .prodlist > div {
+    margin: 2% auto;
+  }
+}

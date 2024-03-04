@@ -25,11 +25,11 @@
   margin: auto;
   line-height: 1.5;
   font-size: 1.2rem;
-  color: var(--text-color-1);
+  color: var(--col1);
 }
 
 .bread-nav {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   border: 1px solid var(--text-color-1);
   padding: 0.25rem 0.4rem;
   display: flex;
