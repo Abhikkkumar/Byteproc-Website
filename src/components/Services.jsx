@@ -15,8 +15,10 @@ export default function Services() {
           <h1 className="sub-title">My Services</h1>
           <div className="services-list px-[.75rem]">
             <div className="service1">
-              {/* <i class="fa-solid fa-code"></i> */}
-              <img className="w-[90px]" src={software} alt="" />
+              <div className="w-[70px] h-[70px] grid place-items-center  img-icon-pd">
+                <img className="w-[70%]" src={software} alt="" />
+              </div>
+
               <h1>Software Development</h1>
               <p>We provide software as per your demand.</p>
               <div
@@ -29,10 +31,11 @@ export default function Services() {
               </div>
             </div>
             <div className="service2">
-              {/* <i class="fa-solid fa-crop"></i> */}
-              <img className="w-[90px]" src={website} alt="" />
+              <div className="w-[70px] h-[70px] grid place-items-center  img-icon-pd">
+                <img className="w-[70%]" src={website} alt="" />
+              </div>
               <h1>Web Development</h1>
-              <p>First Impressions mean everythings especially on Internet.</p>
+              <p>First Impressions mean everything on Internet.</p>
               <div
                 className="flex items-center mt-[.75rem]"
                 onClick={() => navigate("/website-development")}
@@ -43,8 +46,10 @@ export default function Services() {
               </div>
             </div>
             <div className="service3">
-              {/* <i class="fa-brands fa-app-store-ios"></i> */}
-              <img className="w-[90px]" src={app} alt="" />
+              <div className="w-[70px] h-[70px] grid place-items-center  img-icon-pd">
+                <img className="w-[70%]" src={app} alt="" />
+              </div>
+
               <h1>App Development</h1>
               <p>We provide Android app as per your demand.</p>
               <div
@@ -57,8 +62,10 @@ export default function Services() {
               </div>
             </div>
             <div className="service4">
-              {/* <i class="fa-solid fa-shop"></i> */}
-              <img className="w-[90px]" src={digital} alt="" />
+              <div className="w-[70px] h-[70px] grid place-items-center  img-icon-pd">
+                <img className="w-[70%]" src={digital} alt="" />
+              </div>
+
               <h1>Digital Marketing</h1>
               <p>Advertising delivered through digital channels.</p>
               <div

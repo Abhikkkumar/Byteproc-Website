@@ -15,7 +15,7 @@ export default function Header({ setAddress }) {
   const navigate = useNavigate();
 
   // const servicesList = services;
-  
+
   const [services, showServices] = useState(false);
   const [career, showCareer] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,7 +98,7 @@ export default function Header({ setAddress }) {
           onMouseLeave={() => showCareer(false)}
         >
           <NavLink
-            to="/career"
+            to="/full-time-role"
             className="uppercase below w-max below px-[.5rem]"
           >
             <i className="fa-solid fa-briefcase text-[var(--col4)]"></i>
