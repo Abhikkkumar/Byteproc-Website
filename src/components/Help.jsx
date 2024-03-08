@@ -1,8 +1,6 @@
 import React from "react";
 import "./help.css";
 import Img1 from "../assets/chat-icon.png";
-// import img2 from "../assets/mob-slider3.png";
-// import img2 from "../assets/Byteproc-about3.jpg";
 import img3 from "../assets/section-title-shape.png";
 import img4 from "../assets/Data-protection.png";
 import img5 from "../assets/Optimize-system.png";
@@ -23,7 +21,7 @@ export default function Help() {
       </div>
 
       <div className="help-below">
-        <div className="help-below-left">{/* <img src={img2} alt="" /> */}</div>
+        <div className="help-below-left"></div>
 
         <div className="help-below-right">
           <div className="help-below-right-1">
@@ -38,14 +36,18 @@ export default function Help() {
 
           <div className="help-sub">
             <div className="help-sub1">
-              <img src={img4} alt="" className="w-[178px]" />
+              <div className="help-icon ">
+                <img src={img4} alt="" className="w-[95%]" />
+              </div>
+
               <h5>Data protection</h5>
               <hr></hr>
               <p>Protect your data as if it is your most valuable asset.</p>
             </div>
-
             <div className="help-sub2">
-              <img src={img5} alt="" className="w-[178px]" />
+              <div className="help-icon ">
+                <img src={img5} alt="" className="w-[95%]" />
+              </div>
               <h5>Optimize system</h5>
               <hr></hr>
               <p>We fully focuse on making your software easy to use.</p>

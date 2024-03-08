@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./sidebar.css";
 import { CSSTransition } from "react-transition-group";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import generateLink from "./GenerateLink";
 import { services, careerList } from "./Data";
 
 export default function Sidebar({ side, setSide }) {
   const navigate = useNavigate();
   const [service, setService] = useState(false);
-  const [prod, setProd] = useState(false);
+  const [career, setCareer] = useState(false);
   const [sideBottom2, setSideBottom2] = useState(false);
   const [sideBottom, setSideBottom] = useState(false);
   useEffect(() => {
@@ -23,16 +23,16 @@ export default function Sidebar({ side, setSide }) {
     }
     if (!side) {
       setService(false);
-      setProd(false);
+      setCareer(false);
     }
   }, [side]);
 
   const manageState = (elem) => {
-    if (elem == "prod") {
+    if (elem == "career") {
       setService(false);
-      setProd((a) => !a);
+      setCareer((a) => !a);
     } else {
-      setProd(false);
+      setCareer(false);
       setService((a) => !a);
     }
   };
@@ -101,7 +101,6 @@ export default function Sidebar({ side, setSide }) {
 
         <div
           className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
-          // onClick={() => manageState("prod")}
           onClick={() => {
             navigate("/products");
             setSide(false);
@@ -111,32 +110,50 @@ export default function Sidebar({ side, setSide }) {
             <i className="fa-solid fa-newspaper text-[var(--col4)]"></i>{" "}
             Products
           </p>
-          {/* <i className="fa-solid fa-chevron-down"></i> */}
+        </div>
+        <div
+          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
+          onClick={() => manageState("career")}
+        >
+          <p className="">
+            <i className="fa-solid fa-briefcase text-[var(--col4)]"></i> Careers
+          </p>
+          <i className="fa-solid fa-chevron-down"></i>
         </div>
 
-        {/* <CSSTransition
-          in={prod}
+        <CSSTransition
+          in={career}
           timeout={300}
           classNames="fade"
           unmountOnExit={true}
         >
           <div className=" flex flex-col justify-between px-[1rem]  text-[1rem] font-[400]">
-            <p className=" py-[.75rem]">Products 1</p>
-            <p className=" py-[.75rem]">Products 1</p>
+            <NavLink
+              to={generateLink("Full-Time Role")}
+              onClick={() => {
+                setSide(false);
+              }}
+            >
+              <p className=" py-[.75rem]">Full-Time Role</p>
+            </NavLink>
+            <NavLink
+              to={generateLink("Internships")}
+              onClick={() => {
+                setSide(false);
+              }}
+            >
+              <p className=" py-[.75rem]">Internships</p>
+            </NavLink>
+            <NavLink
+              to={generateLink("Workshops")}
+              onClick={() => {
+                setSide(false);
+              }}
+            >
+              <p className=" py-[.75rem]">Workshops</p>
+            </NavLink>
           </div>
-        </CSSTransition> */}
-        <div
-          className="flex justify-between items-center px-[.5rem] py-[.75rem] border-b-2 text-[1.2rem] font-[600]"
-          onClick={() => {
-            navigate("/about-us");
-            setSide(false);
-          }}
-        >
-          <p className="">
-            {" "}
-            <i class="fa-solid fa-address-card"></i> Career
-          </p>
-        </div>
+        </CSSTransition>
         {sideBottom2 && (
           <div className=" w-[100%] text-center mt-[10.27rem] sidebottom2">
             <button className="w-[95%] py-[.5rem] bg-[var(--col4)] text-[#fff] rounded mb-[3%]">

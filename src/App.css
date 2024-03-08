@@ -4,7 +4,7 @@
   --col2: #aaa;
   --col3: #4560af;
   --col4: #344484;
-  --brand-color:#4560af;
+  --brand-color: #4560af;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,25 +43,36 @@
   z-index: 1;
 }
 
-
 /* ---> dropdown */
 .dropdown {
   box-shadow: 1px 1px 10px 1px var(--col2);
 }
 
-
-h1{
+h1 {
   font-size: 2rem !important;
   font-weight: 600 !important;
-
 }
 
-h5{
+h5 {
   font-size: 1.5rem !important;
   font-weight: 500 !important;
 }
 
-h3{
+h3 {
   font-size: 1.8rem !important;
   font-weight: 550 !important;
+}
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--col3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--col4);
 }

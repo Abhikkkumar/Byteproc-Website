@@ -25,7 +25,6 @@
   border-radius: 50%;
 }
 
-
 .help-img:hover {
   background-color: var(--col5);
 }
@@ -39,7 +38,7 @@
   flex-wrap: wrap;
   align-items: stretch;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .help-below-left {
@@ -120,3 +119,17 @@
 .help-sub hr {
   margin: 20px 30px 20px 0px;
 }
+.help-icon {
+  background-color: var(--col1);
+  border: 1px solid var(--col5);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s ease;
+}
+/* .help-sub > div:hover .help-icon {
+  background-color: var(--col4);
+  border-color: var(--col1);
+} */

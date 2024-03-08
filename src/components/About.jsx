@@ -18,15 +18,11 @@ export default function About() {
               src="https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png"
               alt="square-pic"
             />{" "}
-            WHO WE ARE
+            Get to know us
           </h6>
-          <h1>Vama Skylight</h1>
+          <h1>Easy solutions for your IT problems</h1>
           <p>
-            Vama Skylight is a leading manufacturer of drones, providing
-            innovative solutions to the drone industry. Our company is dedicated
-            to leveraging the latest technology to help improve operations ,
-            reduce costs etc. With a team of experts in the field of unmanned
-            aerial systems, we are committed to developing.
+          Byteproc Solutions Pvt. Ltd. is a rapidly expanding IT Company that offers comprehensive IT solutions to businesses globally. We specialize in software, website, and iOS/Android application development, along with UI/UX design and digital marketing services.
           </p>
 
           <div className="section-left-middle">
@@ -35,22 +31,19 @@ export default function About() {
             <div className="section-left-left">
               <h6>
                 {" "}
-                <i class="fa-regular fa-circle-check"></i> Thea Agriculture
-                Drone 16 Litres
+                <i class="fa-regular fa-circle-check"></i>Quality Assurance
               </h6>
               <h6>
                 {" "}
-                <i class="fa-regular fa-circle-check"></i> Thea Agricultural
-                Drone 10 Litres
+                <i class="fa-regular fa-circle-check"></i> Long-Term Partnerships
               </h6>
               <h6>
                 {" "}
-                <i class="fa-regular fa-circle-check"></i> Naina Disaster
-                Management Drone
+                <i class="fa-regular fa-circle-check"></i>Expertise with Timely Delivery
               </h6>
               <h6>
                 {" "}
-                <i class="fa-regular fa-circle-check"></i> Surveillance Drone
+                <i class="fa-regular fa-circle-check"></i> Global Reach
               </h6>
             </div>
           </div>

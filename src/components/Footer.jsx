@@ -6,8 +6,7 @@ export default function Footer() {
       <div className="lg:w-[24%] mb-[2%] sm:w-[35%] w-full">
         <img className="w-[180px] sm:w-3/4 mb-[1%]" src={logo} alt="" />
         <p className="max-w-[300px]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-          quasi accusamus et accusantium corporis explicabo?
+        We Design Super Engaging Web Experiences To Help You Go From More Leads To Customers Faster through Byteproc Solutions Pvt. Ltd.  .
         </p>
         <div className="w-fit pt-[1.75%]">
           <a href="#" target="_blank" className="mr-[.75rem] text-[1.4rem]">

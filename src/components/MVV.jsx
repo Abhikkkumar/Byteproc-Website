@@ -12,7 +12,7 @@ export default function MVV() {
       <div className="w-[45%] py-[1.5rem] px-[1rem]">
         <p className="text-[var(--col3)]">About Our Company</p>
         <h1>Byteproc Solution Pvt. Ltd.</h1>
-        <div>
+        <div>    
           <button
             className={
               mission
@@ -65,8 +65,7 @@ export default function MVV() {
               <span className="text-[1.2rem]"> Years Of Experience</span>
             </p>
             <p className="max-w-[440px] my-[.7rem]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              blanditiis voluptate cumque soluta maiores porro?
+            Byteproc mission is to deliver cutting-edge software solutions that drive excellence and ensure enterprise compliance.
             </p>
             <p>
               <i className="fa-regular fa-square-check text-[var(--col3)]"></i>{" "}
@@ -87,8 +86,7 @@ export default function MVV() {
               <span className="text-[1.2rem]"> Our Vision</span>
             </p>
             <p className="max-w-[440px] my-[.7rem]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              blanditiis voluptate cumque soluta maiores porro?
+            Our vision is to become businesses’ first choice when it comes to software development and maintenance. To accomplish this, we always try to exceed our client’s expectations. Byteproc strives to build lasting partnerships and ensures client satisfaction.
             </p>
             <p>
               <i className="fa-regular fa-square-check text-[var(--col3)]"></i>{" "}
@@ -109,8 +107,7 @@ export default function MVV() {
               <span className="text-[1.2rem]"> Our Value</span>
             </p>
             <p className="max-w-[440px] my-[.7rem]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
-              blanditiis voluptate cumque soluta maiores porro?
+            We clearly understand that all customer landscapes are not of same kind.
             </p>
             <p>
               <i className="fa-regular fa-square-check text-[var(--col3)]"></i>{" "}
