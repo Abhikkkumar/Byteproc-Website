@@ -19,31 +19,22 @@ export default function AboutPage() {
 
       <div className="section2-prod">
         <div className="sec2-prod-left-about">
-          <h1>We Ensure Best Service</h1>
+          <h1>Byteproc Solutions Pvt. Ltd. is more than tech company</h1>
           <p>
-            Vama Skylight LLP is a technology-driven organization focused on
-            utilizing the opportunity that the limitless sky offers by creating
-            reliable solutions to the challenges of the present and future.
+          We are your trusted partner in navigating the dynamic landscape of technology. Our mission is to simplify the complexities of the digital world and deliver efficient, tailored solutions to meet the unique needs of our clients.
           </p>
           <ul>
             <li>
-              <i class="fa-solid fa-check"></i>Our primary products include UAVs
-              for agriculture, photography, mapping, and Remote Pilot Training
-              Organization (RPTO).
+              <i class="fa-solid fa-check"></i>Innovation: We thrive on innovation, constantly exploring new technologies and methodologies to bring fresh, creative solutions to our clients.
             </li>
             <li>
-              <i class="fa-solid fa-check"></i>Our agricultural drones are
-              equipped with sensors and cameras that can be used to monitor crop
-              health, optimize fertilizer and water use, and improve yields.
+              <i class="fa-solid fa-check"></i>Client-Centric Approach: We are committed to understanding our clients' unique challenges and goals, ensuring that our solutions are tailored to their specific needs.
             </li>
             <li>
-              <i class="fa-solid fa-check"></i>Our photography drones are
-              designed for professional aerial photography and videography.
+              <i class="fa-solid fa-check"></i>Quality: Our commitment to quality is unwavering. We adhere to the highest standards of software development, ensuring reliability, security, and scalability.
             </li>
             <li>
-              <i class="fa-solid fa-check"></i>We also provide training,
-              maintenance, and consulting services to help our clients get the
-              most out of their investment.
+              <i class="fa-solid fa-check"></i>Transparency: We believe in open and honest communication with our clients. We provide regular updates, maintain clear documentation, and offer transparent pricing structures.
             </li>
           </ul>
         </div>
