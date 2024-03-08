@@ -24,12 +24,12 @@ export default function Section4() {
         <div className="section_inner">
           <h5 className="contact-who">
             <img className="mr-[.5rem]" src="https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png" />{" "}
-            Key Figures VAMA Skylight
+            Key Figures Byteproc Solutions Pvt. Ltd.
           </h5>
 
-          <h1>Providing innovative solutions to the Drone Industry.</h1>
+          <h1>Providing innovative solutions to the Software Industry.</h1>
           <p>
-            Delivering high-quality, reliable, and user-friendly drones that
+            Delivering high-quality, reliable, and user-friendly platform that
             meet the needs of everyone.
           </p>
           <Link to="/">

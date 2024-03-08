@@ -22,7 +22,7 @@ export default function Home() {
       <Services />
       <Section4 />
       <ProjectCarousel />
-      <Parallex />
+      {/* <Parallex /> */}
       <Help />
 
       <BusinessPartnerCarousel />

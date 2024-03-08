@@ -2,6 +2,9 @@ import React from "react";
 import "./address.css";
 import { CSSTransition } from "react-transition-group";
 import logo from "../assets/byteproc-logo-pvt.png";
+import bengaluru from "../assets/bengaluru.png";
+import patna from "../assets/patna.png";
+import odisha from "../assets/odisha.png";
 
 export default function Address({ address, setAddress }) {
   return (
@@ -50,21 +53,28 @@ export default function Address({ address, setAddress }) {
             <div className="line1 "></div>
           </div>
 
-          <div>
+          <div className="flex items-center">
+            <img src={bengaluru} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Banglore</p>
             {/* <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet.</p> */}
           </div>
-          <div>
+          <div className="flex items-center">
+            {/* <i class="fa-solid fa-building mr-1"></i> */}
+            <img src={odisha} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Odisha</p>
           </div>
-          <div>
+          <div className="flex items-center">
+            {/* <i class="fa-solid fa-building mr-1"></i> */}
+            <img src={patna} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Patna</p>
           </div>
-          <div>
+          <div className="flex items-center">
+            <i class="fa-solid fa-building mx-[.4rem] text-[1.2rem]"></i>
             <p>Muzaffarpur</p>
           </div>
-          <div>
+          <div className="flex items-center">
+            <i class="fa-solid fa-building mx-[.4rem] text-[1.2rem]"></i>
             <p>Arrah</p>
           </div>
         </div>
