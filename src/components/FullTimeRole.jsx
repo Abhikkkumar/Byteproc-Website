@@ -18,7 +18,7 @@ export default function FullTimeRole() {
       "Join our nationally recognized, award winning team! Incredible opportunities available now. Competitive salary and benefits available. Most rewarding job in the country! Apply now!",
   };
   return (
-    <div className="pt-[5rem]">
+    <div className="pt-[3.5rem]">
       <div>
         <BreadrCump bprops={propbread} />
         <div className="all-section-p">

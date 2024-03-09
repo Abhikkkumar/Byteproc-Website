@@ -16,7 +16,7 @@ export default function Contact() {
 
   };
   return (
-    <div className='pt-[5rem]'>
+    <div className='pt-[3.5rem]'>
         <BreadrCump bprops={prop}/>
 
         <div className="contact-outer">

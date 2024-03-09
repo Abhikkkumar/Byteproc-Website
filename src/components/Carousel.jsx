@@ -27,7 +27,7 @@ export default function Carousel() {
               {" "}
               <div className="slides-text">
                 <p className="text-[2rem]">Delivering Excellence in </p>
-                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[0]">
                   Every Byte
                 </p>
                 <button>Discover More</button>
@@ -38,7 +38,7 @@ export default function Carousel() {
             <div className="slides-inner">
               <div className="slides-text">
                 <p className="text-[2rem]">It Software Solution & </p>
-                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[0]">
                 Technology
                 </p>
                 <button>Discover More</button>
@@ -49,7 +49,7 @@ export default function Carousel() {
             <div className="slides-inner">
               <div className="slides-text">
                 <p className="text-[2rem]">Delivering Excellence in </p>
-                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[.25rem]">
+                <p className="font-[700] text-[5rem] mt-[-1rem] mb-[0]">
                   Every Byte
                 </p>
                 <button>Discover More</button>

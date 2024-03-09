@@ -4,7 +4,7 @@ import { AppProp } from './Data'
 
 export default function AppDev() {
   return (
-    <div className='pt-[5rem]'>
+    <div className='pt-[3.5rem]'>
       <ServiceTemp props={AppProp}/>
     </div>
   )

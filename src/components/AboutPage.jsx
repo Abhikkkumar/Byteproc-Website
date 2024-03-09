@@ -12,7 +12,7 @@ export default function AboutPage() {
     arr: ["Home", "About Us"],
   };
   return (
-    <div className="pt-[5rem]">
+    <div className="pt-[3.5rem]">
       <BreadrCump bprops={prop} />
       <About />
       <MVV />

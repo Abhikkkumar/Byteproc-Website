@@ -53,27 +53,27 @@ export default function Address({ address, setAddress }) {
             <div className="line1 "></div>
           </div>
 
-          <div className="flex items-center">
+          <div className="city-list">
             <img src={bengaluru} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Banglore</p>
             {/* <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet.</p> */}
           </div>
-          <div className="flex items-center">
+          <div className="city-list">
             {/* <i class="fa-solid fa-building mr-1"></i> */}
             <img src={odisha} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Odisha</p>
           </div>
-          <div className="flex items-center">
+          <div className="city-list">
             {/* <i class="fa-solid fa-building mr-1"></i> */}
             <img src={patna} alt="" className="w-[1.5rem] mr-[.5rem]" />
             <p>Patna</p>
           </div>
-          <div className="flex items-center">
+          <div className="city-list">
             <i class="fa-solid fa-building mx-[.4rem] text-[1.2rem]"></i>
             <p>Muzaffarpur</p>
           </div>
-          <div className="flex items-center">
+          <div className="city-list">
             <i class="fa-solid fa-building mx-[.4rem] text-[1.2rem]"></i>
             <p>Arrah</p>
           </div>
