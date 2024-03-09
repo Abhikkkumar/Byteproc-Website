@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "../assets/blue-logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderMob({ side, setSide, setAddress }) {
+  const navigate = useNavigate();
   return (
     <div className="headerMob  justify-between items-center w-[100%] px-[1.5%] ">
       {!side ? (
@@ -26,6 +28,10 @@ export default function HeaderMob({ side, setSide, setAddress }) {
         className="max-w-[10rem] lg:w-[13%] py-[.75rem]"
         src={logo}
         alt="logo"
+        onClick={() => {
+          navigate("/");
+          setSide(false);
+        }}
       />
       <div className="flex items-center">
         <div

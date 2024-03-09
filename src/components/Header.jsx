@@ -33,6 +33,9 @@ export default function Header({ setAddress }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  
+
   return (
     <div className=" justify-between px-[.5%] md:px-[1.5%]  header">
       <img
