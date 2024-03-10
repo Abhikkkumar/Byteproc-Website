@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./mvv.css";
-import img1 from "../assets/Slider1.png";
+// import img1 from "../assets/Slider1.png";
+import img1 from "../assets/about..webp";
+
 
 export default function MVV() {
   const [mission, setMission] = useState(true);
@@ -128,7 +130,7 @@ export default function MVV() {
           View Details
         </button>
       </div>
-      <div className="w-[49%] pr-[1rem] grid place-items-center">
+      <div className="w-[40%] pr-[1rem] grid place-items-center">
         <img src={img1} alt="" className="w-full" />
       </div>
     </div>
