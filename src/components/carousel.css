@@ -119,9 +119,11 @@
   text-transform: capitalize;
   font-size: 1.2rem;
   box-shadow: 1px 1px 15px 3px rgba(68, 62, 62, 0.3);
+  border-radius: 3px;
 }
 .slides-text > button:hover{
   background-color: rgba(97, 93, 93, 0.3);
+  
 }
 
 @keyframes anim1 {

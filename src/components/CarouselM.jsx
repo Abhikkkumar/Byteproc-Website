@@ -27,8 +27,7 @@ export default function CarouselM() {
             <div className="m-slides-text">
               <h1>Slide1</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Minima, architecto?
+              Get a customized IT solution with emerging technologies
               </p>
               <button className="mx-auto">click me</button>
             </div>
@@ -39,8 +38,7 @@ export default function CarouselM() {
             <div className="m-slides-text">
               <h1>Slide1</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Minima, architecto?
+              Grow Business Online with Byteproc
               </p>
               <button className="mx-auto">click me</button>
             </div>
@@ -51,8 +49,7 @@ export default function CarouselM() {
             <div className="m-slides-text">
               <h1>Slide1</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Minima, architecto?
+              Delivering Excellence in every byte
               </p>
               <button className="mx-auto">click me</button>
             </div>
